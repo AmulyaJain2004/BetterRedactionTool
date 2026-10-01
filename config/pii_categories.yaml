@@ -1,0 +1,99 @@
+# PII categories to detect and redact. This is the ONE file to edit to
+# add a new PII type or turn one off -- no code changes needed for the
+# common case (kind: presidio_builtin or kind: regex).
+#
+# kind values:
+#   presidio_builtin - reuse one of Presidio's built-in recognizers
+#                       (PERSON, EMAIL_ADDRESS, PHONE_NUMBER, CREDIT_CARD,
+#                       IP_ADDRESS, US_SSN, ...). Zero extra code.
+#   regex             - one or more of your own regex patterns, run
+#                       through Presidio as a PatternRecognizer.
+#
+# score_threshold: matches below this confidence are dropped.
+# fake_provider:   method name called on a faker.Faker() instance to
+#                  generate the consistent replacement value.
+
+categories:
+  - name: PERSON
+    kind: presidio_builtin
+    score_threshold: 0.5
+    fake_provider: name
+
+  - name: EMAIL_ADDRESS
+    kind: presidio_builtin
+    score_threshold: 0.5
+    fake_provider: email
+
+  - name: PHONE_NUMBER
+    kind: presidio_builtin
+    score_threshold: 0.35
+    fake_provider: phone_number
+
+  - name: US_SSN
+    kind: presidio_builtin
+    score_threshold: 0.5
+    fake_provider: ssn
+
+  - name: CREDIT_CARD
+    kind: presidio_builtin
+    score_threshold: 0.5
+    fake_provider: credit_card_number
+
+  - name: IP_ADDRESS
+    kind: presidio_builtin
+    score_threshold: 0.5
+    fake_provider: ipv4_public
+
+# Example of adding a brand-new type with zero code changes -- just a regex:
+#   - name: PASSPORT_NUMBER
+#     kind: regex
+#     score_threshold: 0.7
+#     patterns: ['\b[A-PR-WYa-pr-wy][0-9]\d\s?\d{4}[0-9]\b']
+#     fake_provider: passport_number
+
+  - name: ORGANIZATION
+    kind: spacy_org        # detected via redactor/special_categories.py
+    fake_provider: company
+
+  - name: PHYSICAL_ADDRESS
+    kind: structural       # detected via redactor/special_categories.py + table structure
+    fake_provider: address
+
+  - name: DATE_OF_BIRTH
+    kind: context_regex    # detected via redactor/special_categories.py
+    fake_provider: date_of_birth
+
+  - name: DIRECTOR_ID_NUMBER
+    kind: structural       # bonus category: shows how easy it is to extend
+    fake_provider: din_number
+
+# ORGANIZATION, PHYSICAL_ADDRESS and DATE_OF_BIRTH are handled by small,
+# purpose-built functions in redactor/special_categories.py instead of a
+# plain presidio_builtin/regex entry, because each needs extra context
+# Presidio's flat span-matching can't express on its own:
+#   - ORGANIZATION needs a deny-list (regulators/statutes aren't PII).
+#   - PHYSICAL_ADDRESS must only fire for a *named individual's* address,
+#     not the company's public registered/corporate office.
+#   - DATE_OF_BIRTH must only fire near a "date of birth" style keyword,
+#     otherwise every legal date in the document would be flagged.
+# DIRECTOR_ID_NUMBER (India's DIN) is not in spec.md's minimum list; it's
+# included to demonstrate how a new personal-identifier category is added:
+# one config entry (see structural_table_columns below) + one line in
+# redactor/mapping.py's fake-value generator.
+
+# Tables like "Name | Designation | DIN | Address" hold true personal data
+# in plain columns. Reading each cell in isolation with NER is unreliable
+# (a bare 3-word name with no sentence around it is sometimes misread as a
+# company), so for tables that look like a personnel/KYC table -- header
+# row has "name" AND at least one of `requires_any_of` -- we redact the
+# matching column directly by position instead of guessing from NER.
+structural_table_columns:
+  - column_header: name
+    category: PERSON
+    requires_any_of: [din, designation]
+  - column_header: address
+    category: PHYSICAL_ADDRESS
+    requires_any_of: [din, designation]
+  - column_header: din
+    category: DIRECTOR_ID_NUMBER
+    requires_any_of: [designation]

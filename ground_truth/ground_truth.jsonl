@@ -1,0 +1,522 @@
+{"unit_id": "p11", "category": "ORGANIZATION", "start": 0, "end": 25, "text": "KSH INTERNATIONAL LIMITED"}
+{"unit_id": "p23", "category": "ORGANIZATION", "start": 0, "end": 25, "text": "KSH INTERNATIONAL LIMITED"}
+{"unit_id": "p24", "category": "ORGANIZATION", "start": 44, "end": 84, "text": "Bhandary Metal Extrusion Private Limited"}
+{"unit_id": "p24", "category": "ORGANIZATION", "start": 316, "end": 356, "text": "Bhandary Metal Extrusion Private Limited"}
+{"unit_id": "p24", "category": "ORGANIZATION", "start": 362, "end": 395, "text": "KSH International Private Limited"}
+{"unit_id": "p24", "category": "ORGANIZATION", "start": 1529, "end": 1554, "text": "KSH International Limited"}
+{"unit_id": "p28", "category": "PERSON", "start": 16, "end": 33, "text": "Sarthak Malvadkar"}
+{"unit_id": "p28", "category": "PHONE_NUMBER", "start": 88, "end": 105, "text": "+ 91 20 4505 3237"}
+{"unit_id": "p29", "category": "EMAIL_ADDRESS", "start": 8, "end": 39, "text": "cs.connect@kshinternational.com"}
+{"unit_id": "p48", "category": "ORGANIZATION", "start": 129, "end": 154, "text": "KSH International Limited"}
+{"unit_id": "p114", "category": "ORGANIZATION", "start": 258, "end": 301, "text": "CARE Analytics and Advisory Private Limited"}
+{"unit_id": "p166", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "p166", "category": "PERSON", "start": 44, "end": 63, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "p166", "category": "PERSON", "start": 85, "end": 104, "text": "Rakhi Girija Shetty"}
+{"unit_id": "p166", "category": "PERSON", "start": 23, "end": 42, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "p166", "category": "PERSON", "start": 65, "end": 83, "text": "Rohit Kushal Hegde"}
+{"unit_id": "p166", "category": "ORGANIZATION", "start": 248, "end": 291, "text": "Waterloo Industrial Park VI Private Limited"}
+{"unit_id": "p166", "category": "ORGANIZATION", "start": 218, "end": 243, "text": "Kanchenjunga Family Trust"}
+{"unit_id": "p166", "category": "ORGANIZATION", "start": 106, "end": 129, "text": "Dhaulagiri Family Trust"}
+{"unit_id": "p166", "category": "ORGANIZATION", "start": 194, "end": 216, "text": "Annapurna Family Trust"}
+{"unit_id": "p166", "category": "ORGANIZATION", "start": 131, "end": 151, "text": "Everest Family Trust"}
+{"unit_id": "p166", "category": "ORGANIZATION", "start": 153, "end": 172, "text": "Makalu Family Trust"}
+{"unit_id": "p166", "category": "ORGANIZATION", "start": 174, "end": 192, "text": "Broad Family Trust"}
+{"unit_id": "p225", "category": "PERSON", "start": 31, "end": 52, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "p225", "category": "PERSON", "start": 54, "end": 73, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "p225", "category": "PERSON", "start": 98, "end": 117, "text": "Rakhi Girija Shetty"}
+{"unit_id": "p225", "category": "PERSON", "start": 75, "end": 93, "text": "Rohit Kushal Hegde"}
+{"unit_id": "p226", "category": "PERSON", "start": 69, "end": 86, "text": "Sarthak Malvadkar"}
+{"unit_id": "p226", "category": "PERSON", "start": 30, "end": 45, "text": "Sandesh Bhagwat"}
+{"unit_id": "p226", "category": "PERSON", "start": 119, "end": 132, "text": "Ganesh Prasad"}
+{"unit_id": "p226", "category": "PERSON", "start": 52, "end": 62, "text": "Amod Joshi"}
+{"unit_id": "p262", "category": "ORGANIZATION", "start": 20, "end": 40, "text": "Kirtane & Pandit LLP"}
+{"unit_id": "p267", "category": "ORGANIZATION", "start": 18, "end": 38, "text": "Kirtane & Pandit LLP"}
+{"unit_id": "p276", "category": "ORGANIZATION", "start": 20, "end": 40, "text": "Kirtane & Pandit LLP"}
+{"unit_id": "p282", "category": "ORGANIZATION", "start": 18, "end": 38, "text": "Kirtane & Pandit LLP"}
+{"unit_id": "p306", "category": "ORGANIZATION", "start": 254, "end": 297, "text": "Care Analytics and Advisory Private Limited"}
+{"unit_id": "p319", "category": "ORGANIZATION", "start": 203, "end": 252, "text": "Nidec Industrial Automation India Private Limited"}
+{"unit_id": "p319", "category": "ORGANIZATION", "start": 84, "end": 125, "text": "CG Power and Industrial Solutions Limited"}
+{"unit_id": "p319", "category": "ORGANIZATION", "start": 127, "end": 168, "text": "Emirates Transformer & Switchgear Limited"}
+{"unit_id": "p319", "category": "ORGANIZATION", "start": 254, "end": 295, "text": "Transformers & Rectifiers (India) Limited"}
+{"unit_id": "p319", "category": "ORGANIZATION", "start": 301, "end": 333, "text": "Virginia Transformer Corporation"}
+{"unit_id": "p319", "category": "ORGANIZATION", "start": 170, "end": 201, "text": "Georgia Transformer Corporation"}
+{"unit_id": "p319", "category": "ORGANIZATION", "start": 35, "end": 59, "text": "Al-Ahleia Switchgear Co."}
+{"unit_id": "p319", "category": "ORGANIZATION", "start": 61, "end": 82, "text": "Bharat Bijlee Limited"}
+{"unit_id": "p347", "category": "ORGANIZATION", "start": 152, "end": 189, "text": "Savli Copper Products Private Limited"}
+{"unit_id": "p347", "category": "ORGANIZATION", "start": 103, "end": 130, "text": "Hindalco Industries Limited"}
+{"unit_id": "p347", "category": "ORGANIZATION", "start": 75, "end": 101, "text": "Elantas Beck India Limited"}
+{"unit_id": "p347", "category": "ORGANIZATION", "start": 191, "end": 211, "text": "Union Copper Rod LLC"}
+{"unit_id": "p347", "category": "ORGANIZATION", "start": 132, "end": 150, "text": "Polycom Associates"}
+{"unit_id": "p347", "category": "ORGANIZATION", "start": 35, "end": 53, "text": "Ahlstrom Sweden AB"}
+{"unit_id": "p347", "category": "ORGANIZATION", "start": 55, "end": 73, "text": "Cindus Corporation"}
+{"unit_id": "p347", "category": "ORGANIZATION", "start": 217, "end": 232, "text": "Vedanta Limited"}
+{"unit_id": "p397", "category": "ORGANIZATION", "start": 333, "end": 383, "text": "KSH International Chakan Internal Kamgar Sangathna"}
+{"unit_id": "p428", "category": "ORGANIZATION", "start": 280, "end": 313, "text": "KSH International Private Limited"}
+{"unit_id": "p440", "category": "ORGANIZATION", "start": 103, "end": 143, "text": "Bhandary Metal Extrusion Private Limited"}
+{"unit_id": "p440", "category": "ORGANIZATION", "start": 149, "end": 182, "text": "KSH International Private Limited"}
+{"unit_id": "p441", "category": "PERSON", "start": 87, "end": 106, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "p442", "category": "PERSON", "start": 99, "end": 117, "text": "Rohit Kushal Hegde"}
+{"unit_id": "p443", "category": "PERSON", "start": 95, "end": 113, "text": "Rohit Kushal Hegde"}
+{"unit_id": "p455", "category": "ORGANIZATION", "start": 169, "end": 184, "text": "Kanj and Co LLP"}
+{"unit_id": "p456", "category": "PERSON", "start": 153, "end": 174, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "p456", "category": "PERSON", "start": 73, "end": 94, "text": "Karunakar N. Bhandary"}
+{"unit_id": "p456", "category": "PERSON", "start": 176, "end": 193, "text": "Narayna B. Shetty"}
+{"unit_id": "p456", "category": "PERSON", "start": 198, "end": 215, "text": "Jayaram N. Shetty"}
+{"unit_id": "p463", "category": "ORGANIZATION", "start": 154, "end": 197, "text": "Care Analytics and Advisory Private Limited"}
+{"unit_id": "p487", "category": "PERSON", "start": 31, "end": 52, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "p487", "category": "PERSON", "start": 54, "end": 73, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "p487", "category": "PERSON", "start": 98, "end": 117, "text": "Rakhi Girija Shetty"}
+{"unit_id": "p487", "category": "PERSON", "start": 75, "end": 93, "text": "Rohit Kushal Hegde"}
+{"unit_id": "p488", "category": "PERSON", "start": 69, "end": 86, "text": "Sarthak Malvadkar"}
+{"unit_id": "p488", "category": "PERSON", "start": 30, "end": 45, "text": "Sandesh Bhagwat"}
+{"unit_id": "p488", "category": "PERSON", "start": 119, "end": 132, "text": "Ganesh Prasad"}
+{"unit_id": "p488", "category": "PERSON", "start": 52, "end": 62, "text": "Amod Joshi"}
+{"unit_id": "p582", "category": "ORGANIZATION", "start": 119, "end": 139, "text": "Care Ratings Limited"}
+{"unit_id": "p617", "category": "PERSON", "start": 39, "end": 60, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "p617", "category": "PERSON", "start": 83, "end": 102, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "p617", "category": "PERSON", "start": 127, "end": 146, "text": "Rakhi Girija Shetty"}
+{"unit_id": "p617", "category": "PERSON", "start": 62, "end": 81, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "p617", "category": "PERSON", "start": 104, "end": 122, "text": "Rohit Kushal Hegde"}
+{"unit_id": "p633", "category": "PERSON", "start": 359, "end": 381, "text": "Dinesh Hirachand Munot"}
+{"unit_id": "p633", "category": "PERSON", "start": 386, "end": 404, "text": "Ajay Shriram Patil"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 108, "end": 155, "text": "KSH Project Management Services Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 327, "end": 372, "text": "Kushal Motors and Electricals Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 840, "end": 885, "text": "Waterloo Industrial Park IX A Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 786, "end": 831, "text": "Waterloo Industrial Park IX B Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 683, "end": 728, "text": "Waterloo Industrial Park VIII Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 479, "end": 523, "text": "Waterloo Industrial Park III Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 735, "end": 778, "text": "Waterloo Industrial Park IX Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 632, "end": 675, "text": "Waterloo Industrial Park VI Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 530, "end": 573, "text": "Waterloo Industrial Park IV Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 430, "end": 473, "text": "Waterloo Industrial Park II Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 581, "end": 623, "text": "Waterloo Industrial Park V Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 381, "end": 423, "text": "Waterloo Industrial Park I Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 279, "end": 319, "text": "KSH Integrated Logistics Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 202, "end": 235, "text": "KSH Infra Park VI Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 899, "end": 932, "text": "KSH Infra Park IV Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 70, "end": 101, "text": "Waterloo Motors Private Limited"}
+{"unit_id": "p647", "category": "ORGANIZATION", "start": 241, "end": 272, "text": "KSH Distriparks Private Limited"}
+{"unit_id": "p685", "category": "PERSON", "start": 47, "end": 68, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "p685", "category": "PERSON", "start": 88, "end": 100, "text": "Pushpa Hegde"}
+{"unit_id": "p718", "category": "ORGANIZATION", "start": 33, "end": 58, "text": "KSH International Limited"}
+{"unit_id": "p723", "category": "ORGANIZATION", "start": 32, "end": 57, "text": "KSH International Limited"}
+{"unit_id": "p741", "category": "PERSON", "start": 0, "end": 17, "text": "Sarthak Malvadkar"}
+{"unit_id": "p744", "category": "PHONE_NUMBER", "start": 11, "end": 27, "text": "+ 91 20 45053237"}
+{"unit_id": "p745", "category": "EMAIL_ADDRESS", "start": 8, "end": 46, "text": "Sarthak.malvadkar@kshinterantional.com"}
+{"unit_id": "p753", "category": "ORGANIZATION", "start": 0, "end": 32, "text": "Nuvama Wealth Management Limited"}
+{"unit_id": "p756", "category": "EMAIL_ADDRESS", "start": 34, "end": 52, "text": "ksh.ipo@nuvama.com"}
+{"unit_id": "p756", "category": "PHONE_NUMBER", "start": 11, "end": 26, "text": "+91 22 40094400"}
+{"unit_id": "p757", "category": "EMAIL_ADDRESS", "start": 27, "end": 56, "text": "customerservice.mb@nuvama.com"}
+{"unit_id": "p758", "category": "PERSON", "start": 29, "end": 43, "text": "Soumavo Sarkar"}
+{"unit_id": "p758", "category": "PERSON", "start": 16, "end": 27, "text": "Lokesh Shah"}
+{"unit_id": "p761", "category": "ORGANIZATION", "start": 0, "end": 24, "text": "ICICI Securities Limited"}
+{"unit_id": "p762", "category": "EMAIL_ADDRESS", "start": 35, "end": 58, "text": "ksh@icicisecurities.com"}
+{"unit_id": "p762", "category": "EMAIL_ADDRESS", "start": 119, "end": 151, "text": "customercare@icicisecurities.com"}
+{"unit_id": "p762", "category": "PHONE_NUMBER", "start": 11, "end": 27, "text": "+91 22 6807 7100"}
+{"unit_id": "p763", "category": "PERSON", "start": 16, "end": 30, "text": "Kishan Rastogi"}
+{"unit_id": "p763", "category": "PERSON", "start": 31, "end": 44, "text": "Abhijit Diwan"}
+{"unit_id": "p775", "category": "ORGANIZATION", "start": 0, "end": 32, "text": "Nuvama Wealth Management Limited"}
+{"unit_id": "p779", "category": "PHONE_NUMBER", "start": 11, "end": 28, "text": "+ 91 22 4009 4400"}
+{"unit_id": "p780", "category": "EMAIL_ADDRESS", "start": 7, "end": 25, "text": "ksh.ipo@nuvama.com"}
+{"unit_id": "p780", "category": "EMAIL_ADDRESS", "start": 27, "end": 53, "text": "prakash.boricha@nuvama.com"}
+{"unit_id": "p780", "category": "EMAIL_ADDRESS", "start": 59, "end": 83, "text": "sheetal.parab@nuvama.com"}
+{"unit_id": "p782", "category": "PERSON", "start": 16, "end": 31, "text": "Prakash Boricha"}
+{"unit_id": "p785", "category": "ORGANIZATION", "start": 0, "end": 24, "text": "ICICI Securities Limited"}
+{"unit_id": "p786", "category": "EMAIL_ADDRESS", "start": 35, "end": 58, "text": "ksh@icicisecurities.com"}
+{"unit_id": "p786", "category": "PHONE_NUMBER", "start": 11, "end": 27, "text": "+91 22 6807 7100"}
+{"unit_id": "p787", "category": "EMAIL_ADDRESS", "start": 27, "end": 59, "text": "customercare@icicisecurities.com"}
+{"unit_id": "p788", "category": "PERSON", "start": 16, "end": 30, "text": "Kishan Rastogi"}
+{"unit_id": "p788", "category": "PERSON", "start": 31, "end": 44, "text": "Abhijit Diwan"}
+{"unit_id": "p791", "category": "ORGANIZATION", "start": 46, "end": 54, "text": "Trilegal"}
+{"unit_id": "p796", "category": "EMAIL_ADDRESS", "start": 7, "end": 23, "text": "ipo@trilegal.com"}
+{"unit_id": "p797", "category": "PHONE_NUMBER", "start": 11, "end": 27, "text": "+91 22 4079 1000"}
+{"unit_id": "p800", "category": "ORGANIZATION", "start": 0, "end": 33, "text": "MUFG Intime India Private Limited"}
+{"unit_id": "p800", "category": "ORGANIZATION", "start": 44, "end": 77, "text": "Link Intime India Private Limited"}
+{"unit_id": "p801", "category": "PHONE_NUMBER", "start": 86, "end": 100, "text": "+91 81081 1494"}
+{"unit_id": "p802", "category": "EMAIL_ADDRESS", "start": 8, "end": 45, "text": "kshinternational.ipo@in.mpms.mufg.com"}
+{"unit_id": "p803", "category": "EMAIL_ADDRESS", "start": 27, "end": 64, "text": "kshinternational.ipo@in.mpms.mufg.com"}
+{"unit_id": "p804", "category": "PERSON", "start": 46, "end": 66, "text": "Shanti Gopalkrishnan"}
+{"unit_id": "p807", "category": "ORGANIZATION", "start": 44, "end": 61, "text": "HDFC Bank Limited"}
+{"unit_id": "p808", "category": "ORGANIZATION", "start": 0, "end": 17, "text": "HDFC Bank Limited"}
+{"unit_id": "p810", "category": "PHONE_NUMBER", "start": 11, "end": 26, "text": "+91 22 30752929"}
+{"unit_id": "p810", "category": "PHONE_NUMBER", "start": 28, "end": 43, "text": "+91 22 30752928"}
+{"unit_id": "p810", "category": "PHONE_NUMBER", "start": 48, "end": 63, "text": "+91 22 30752914"}
+{"unit_id": "p811", "category": "EMAIL_ADDRESS", "start": 7, "end": 36, "text": "siddharth.jadhav@hdfcbank.com"}
+{"unit_id": "p811", "category": "EMAIL_ADDRESS", "start": 38, "end": 64, "text": "sachin.gawade@hdfcbank.com"}
+{"unit_id": "p811", "category": "EMAIL_ADDRESS", "start": 65, "end": 88, "text": "eric.bacha@hdfcbank.com"}
+{"unit_id": "p811", "category": "EMAIL_ADDRESS", "start": 90, "end": 118, "text": "tushar.gavankar@hdfcbank.com"}
+{"unit_id": "p811", "category": "EMAIL_ADDRESS", "start": 124, "end": 149, "text": "pravin.teli2@hdfcbank.com"}
+{"unit_id": "p812", "category": "PERSON", "start": 56, "end": 72, "text": "Siddharth Jadhav"}
+{"unit_id": "p812", "category": "PERSON", "start": 74, "end": 89, "text": "Tushar Gavankar"}
+{"unit_id": "p812", "category": "PERSON", "start": 28, "end": 41, "text": "Sachin Gawade"}
+{"unit_id": "p812", "category": "PERSON", "start": 43, "end": 54, "text": "Pravin Teli"}
+{"unit_id": "p812", "category": "PERSON", "start": 16, "end": 26, "text": "Eric Bacha"}
+{"unit_id": "p817", "category": "ORGANIZATION", "start": 0, "end": 18, "text": "ICICI Bank Limited"}
+{"unit_id": "p819", "category": "PERSON", "start": 175, "end": 186, "text": "Varun Badai"}
+{"unit_id": "p819", "category": "EMAIL_ADDRESS", "start": 111, "end": 131, "text": "Ipocmg@icicibank.com"}
+{"unit_id": "p819", "category": "PHONE_NUMBER", "start": 91, "end": 103, "text": "022-68052182"}
+{"unit_id": "p823", "category": "ORGANIZATION", "start": 0, "end": 17, "text": "HDFC Bank Limited"}
+{"unit_id": "p824", "category": "ORGANIZATION", "start": 0, "end": 17, "text": "HDFC Bank Limited"}
+{"unit_id": "p826", "category": "PHONE_NUMBER", "start": 11, "end": 26, "text": "+91 22 30752929"}
+{"unit_id": "p826", "category": "PHONE_NUMBER", "start": 28, "end": 43, "text": "+91 22 30752928"}
+{"unit_id": "p826", "category": "PHONE_NUMBER", "start": 48, "end": 63, "text": "+91 22 30752914"}
+{"unit_id": "p827", "category": "EMAIL_ADDRESS", "start": 7, "end": 36, "text": "siddharth.jadhav@hdfcbank.com"}
+{"unit_id": "p827", "category": "EMAIL_ADDRESS", "start": 38, "end": 64, "text": "sachin.gawade@hdfcbank.com"}
+{"unit_id": "p827", "category": "EMAIL_ADDRESS", "start": 65, "end": 88, "text": "eric.bacha@hdfcbank.com"}
+{"unit_id": "p827", "category": "EMAIL_ADDRESS", "start": 90, "end": 118, "text": "tushar.gavankar@hdfcbank.com"}
+{"unit_id": "p827", "category": "EMAIL_ADDRESS", "start": 124, "end": 149, "text": "pravin.teli2@hdfcbank.com"}
+{"unit_id": "p828", "category": "PERSON", "start": 56, "end": 72, "text": "Siddharth Jadhav"}
+{"unit_id": "p828", "category": "PERSON", "start": 74, "end": 89, "text": "Tushar Gavankar"}
+{"unit_id": "p828", "category": "PERSON", "start": 28, "end": 41, "text": "Sachin Gawade"}
+{"unit_id": "p828", "category": "PERSON", "start": 43, "end": 54, "text": "Pravin Teli"}
+{"unit_id": "p828", "category": "PERSON", "start": 16, "end": 26, "text": "Eric Bacha"}
+{"unit_id": "p833", "category": "ORGANIZATION", "start": 0, "end": 18, "text": "ICICI Bank Limited"}
+{"unit_id": "p835", "category": "PERSON", "start": 175, "end": 186, "text": "Varun Badai"}
+{"unit_id": "p835", "category": "EMAIL_ADDRESS", "start": 111, "end": 131, "text": "Ipocmg@icicibank.com"}
+{"unit_id": "p835", "category": "PHONE_NUMBER", "start": 91, "end": 103, "text": "022-68052182"}
+{"unit_id": "p838", "category": "ORGANIZATION", "start": 0, "end": 17, "text": "HDFC Bank Limited"}
+{"unit_id": "p839", "category": "ORGANIZATION", "start": 0, "end": 17, "text": "HDFC Bank Limited"}
+{"unit_id": "p841", "category": "PHONE_NUMBER", "start": 11, "end": 26, "text": "+91 22 30752929"}
+{"unit_id": "p841", "category": "PHONE_NUMBER", "start": 28, "end": 43, "text": "+91 22 30752928"}
+{"unit_id": "p841", "category": "PHONE_NUMBER", "start": 48, "end": 63, "text": "+91 22 30752914"}
+{"unit_id": "p842", "category": "EMAIL_ADDRESS", "start": 7, "end": 36, "text": "siddharth.jadhav@hdfcbank.com"}
+{"unit_id": "p842", "category": "EMAIL_ADDRESS", "start": 38, "end": 64, "text": "sachin.gawade@hdfcbank.com"}
+{"unit_id": "p842", "category": "EMAIL_ADDRESS", "start": 65, "end": 88, "text": "eric.bacha@hdfcbank.com"}
+{"unit_id": "p842", "category": "EMAIL_ADDRESS", "start": 90, "end": 118, "text": "tushar.gavankar@hdfcbank.com"}
+{"unit_id": "p842", "category": "EMAIL_ADDRESS", "start": 124, "end": 149, "text": "pravin.teli2@hdfcbank.com"}
+{"unit_id": "p843", "category": "PERSON", "start": 56, "end": 72, "text": "Siddharth Jadhav"}
+{"unit_id": "p843", "category": "PERSON", "start": 74, "end": 89, "text": "Tushar Gavankar"}
+{"unit_id": "p843", "category": "PERSON", "start": 28, "end": 41, "text": "Sachin Gawade"}
+{"unit_id": "p843", "category": "PERSON", "start": 43, "end": 54, "text": "Pravin Teli"}
+{"unit_id": "p843", "category": "PERSON", "start": 16, "end": 26, "text": "Eric Bacha"}
+{"unit_id": "p863", "category": "ORGANIZATION", "start": 98, "end": 119, "text": "Kirtane & Pandit, LLP"}
+{"unit_id": "p865", "category": "ORGANIZATION", "start": 70, "end": 84, "text": "Kanj & Co. LLP"}
+{"unit_id": "p868", "category": "ORGANIZATION", "start": 0, "end": 21, "text": "Kirtane & Pandit, LLP"}
+{"unit_id": "p873", "category": "EMAIL_ADDRESS", "start": 8, "end": 39, "text": "parag.pansare@kirtanepandit.com"}
+{"unit_id": "p874", "category": "PHONE_NUMBER", "start": 11, "end": 30, "text": "+ 91 (20) 6729 5100"}
+{"unit_id": "p887", "category": "PHONE_NUMBER", "start": 11, "end": 27, "text": "+91 20 6606 4494"}
+{"unit_id": "p888", "category": "PERSON", "start": 16, "end": 29, "text": "Hitesh Ramani"}
+{"unit_id": "p890", "category": "EMAIL_ADDRESS", "start": 7, "end": 29, "text": "hitesh.ramani@citi.com"}
+{"unit_id": "p898", "category": "PERSON", "start": 44, "end": 56, "text": "Chitra Raste"}
+{"unit_id": "p898", "category": "EMAIL_ADDRESS", "start": 95, "end": 115, "text": "pro@eximbankindia.in"}
+{"unit_id": "p898", "category": "PHONE_NUMBER", "start": 11, "end": 27, "text": "+91 20 2640 3100"}
+{"unit_id": "p902", "category": "ORGANIZATION", "start": 0, "end": 21, "text": "IndusInd Bank Limited"}
+{"unit_id": "p905", "category": "PERSON", "start": 43, "end": 57, "text": "Sharmila Joshi"}
+{"unit_id": "p905", "category": "EMAIL_ADDRESS", "start": 92, "end": 119, "text": "sharmila.joshi@indusind.com"}
+{"unit_id": "p905", "category": "PHONE_NUMBER", "start": 11, "end": 26, "text": "+91-20-26234000"}
+{"unit_id": "p907", "category": "ORGANIZATION", "start": 0, "end": 18, "text": "ICICI Bank Limited"}
+{"unit_id": "p910", "category": "PERSON", "start": 43, "end": 55, "text": "Cherag Gyara"}
+{"unit_id": "p910", "category": "EMAIL_ADDRESS", "start": 90, "end": 116, "text": "cherag.gyara@icicibank.com"}
+{"unit_id": "p910", "category": "PHONE_NUMBER", "start": 11, "end": 26, "text": "+ 91 8879770456"}
+{"unit_id": "p912", "category": "ORGANIZATION", "start": 0, "end": 17, "text": "HDFC Bank Limited"}
+{"unit_id": "p916", "category": "PERSON", "start": 44, "end": 58, "text": "Manisha Shukla"}
+{"unit_id": "p916", "category": "PHONE_NUMBER", "start": 11, "end": 27, "text": "+91 20 6769 4648"}
+{"unit_id": "p917", "category": "EMAIL_ADDRESS", "start": 7, "end": 34, "text": "manisha.shukla@hdfcbank.com"}
+{"unit_id": "p923", "category": "PERSON", "start": 44, "end": 58, "text": "Tushar Wakhele"}
+{"unit_id": "p923", "category": "PHONE_NUMBER", "start": 11, "end": 27, "text": "+91 20 2561 8211"}
+{"unit_id": "p924", "category": "EMAIL_ADDRESS", "start": 7, "end": 28, "text": "rm6.ifbpune@sbi.co.in"}
+{"unit_id": "p928", "category": "ORGANIZATION", "start": 0, "end": 24, "text": "The Federal Bank Limited"}
+{"unit_id": "p929", "category": "PHONE_NUMBER", "start": 11, "end": 26, "text": "+ 91 91586 4036"}
+{"unit_id": "p930", "category": "PERSON", "start": 16, "end": 37, "text": "Ashish Mathew Pulloor"}
+{"unit_id": "p932", "category": "EMAIL_ADDRESS", "start": 7, "end": 33, "text": "ashishmp@federalbank.co.in"}
+{"unit_id": "p934", "category": "ORGANIZATION", "start": 0, "end": 21, "text": "Bajaj Finance Limited"}
+{"unit_id": "p937", "category": "PERSON", "start": 44, "end": 54, "text": "Anand Soni"}
+{"unit_id": "p937", "category": "EMAIL_ADDRESS", "start": 92, "end": 118, "text": "anand.soni@bajajfinserv.in"}
+{"unit_id": "p937", "category": "PHONE_NUMBER", "start": 11, "end": 27, "text": "+91 20 7157 6403"}
+{"unit_id": "p945", "category": "ORGANIZATION", "start": 137, "end": 157, "text": "CARE Ratings Limited"}
+{"unit_id": "p961", "category": "ORGANIZATION", "start": 370, "end": 387, "text": "Financial Express"}
+{"unit_id": "p961", "category": "ORGANIZATION", "start": 542, "end": 550, "text": "Loksatta"}
+{"unit_id": "t0_r1_c2", "category": "PERSON", "start": 1, "end": 18, "text": "Sarthak Malvadkar"}
+{"unit_id": "t0_r1_c4", "category": "EMAIL_ADDRESS", "start": 8, "end": 39, "text": "cs.connect@kshinternational.com"}
+{"unit_id": "t0_r1_c4", "category": "PHONE_NUMBER", "start": 51, "end": 67, "text": "+ 91 20 45053237"}
+{"unit_id": "t0_r2_c0", "category": "PERSON", "start": 15, "end": 36, "text": "KUSHAL SUBBAYYA HEGDE"}
+{"unit_id": "t0_r2_c0", "category": "PERSON", "start": 38, "end": 57, "text": "PUSHPA KUSHAL HEGDE"}
+{"unit_id": "t0_r2_c0", "category": "PERSON", "start": 59, "end": 78, "text": "RAJESH KUSHAL HEGDE"}
+{"unit_id": "t0_r2_c0", "category": "PERSON", "start": 100, "end": 119, "text": "RAKHI GIRIJA SHETTY"}
+{"unit_id": "t0_r2_c0", "category": "PERSON", "start": 80, "end": 98, "text": "ROHIT KUSHAL HEGDE"}
+{"unit_id": "t0_r2_c0", "category": "ORGANIZATION", "start": 263, "end": 306, "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"}
+{"unit_id": "t0_r2_c0", "category": "ORGANIZATION", "start": 233, "end": 258, "text": "KANCHENJUNGA FAMILY TRUST"}
+{"unit_id": "t0_r2_c0", "category": "ORGANIZATION", "start": 121, "end": 144, "text": "DHAULAGIRI FAMILY TRUST"}
+{"unit_id": "t0_r2_c0", "category": "ORGANIZATION", "start": 209, "end": 231, "text": "ANNAPURNA FAMILY TRUST"}
+{"unit_id": "t0_r2_c0", "category": "ORGANIZATION", "start": 146, "end": 166, "text": "EVEREST FAMILY TRUST"}
+{"unit_id": "t0_r2_c0", "category": "ORGANIZATION", "start": 168, "end": 187, "text": "MAKALU FAMILY TRUST"}
+{"unit_id": "t0_r2_c0", "category": "ORGANIZATION", "start": 189, "end": 207, "text": "BROAD FAMILY TRUST"}
+{"unit_id": "t0_r8_c0", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t0_r9_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t0_r10_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t0_r11_c0", "category": "PERSON", "start": 0, "end": 18, "text": "Rohit Kushal Hegde"}
+{"unit_id": "t0_r12_c0", "category": "ORGANIZATION", "start": 17, "end": 37, "text": "Kirtane & Pandit LLP"}
+{"unit_id": "t1_r7_c3", "category": "PERSON", "start": 13, "end": 27, "text": "Soumavo Sarkar"}
+{"unit_id": "t1_r7_c3", "category": "PERSON", "start": 0, "end": 11, "text": "Lokesh Shah"}
+{"unit_id": "t1_r7_c7", "category": "EMAIL_ADDRESS", "start": 7, "end": 25, "text": "ksh.ipo@nuvama.com"}
+{"unit_id": "t1_r7_c7", "category": "PHONE_NUMBER", "start": 37, "end": 53, "text": "+91 22 4009 4400"}
+{"unit_id": "t1_r8_c3", "category": "PERSON", "start": 1, "end": 15, "text": "Kishan Rastogi"}
+{"unit_id": "t1_r8_c3", "category": "PERSON", "start": 17, "end": 30, "text": "Abhijit Diwan"}
+{"unit_id": "t1_r8_c7", "category": "EMAIL_ADDRESS", "start": 8, "end": 31, "text": "ksh@icicisecurities.com"}
+{"unit_id": "t1_r8_c7", "category": "PHONE_NUMBER", "start": 43, "end": 59, "text": "+91 22 6807 7100"}
+{"unit_id": "t1_r11_c0", "category": "ORGANIZATION", "start": 0, "end": 33, "text": "MUFG Intime India Private Limited"}
+{"unit_id": "t1_r11_c0", "category": "ORGANIZATION", "start": 44, "end": 77, "text": "Link Intime India Private Limited"}
+{"unit_id": "t1_r11_c1", "category": "PERSON", "start": 0, "end": 20, "text": "Shanti Gopalkrishnan"}
+{"unit_id": "t1_r11_c3", "category": "EMAIL_ADDRESS", "start": 35, "end": 72, "text": "kshinternational.ipo@in.mpms.mufg.com"}
+{"unit_id": "t1_r11_c3", "category": "PHONE_NUMBER", "start": 11, "end": 25, "text": "+91 81081 1494"}
+{"unit_id": "t2_r0_c0", "category": "PERSON", "start": 15, "end": 36, "text": "KUSHAL SUBBAYYA HEGDE"}
+{"unit_id": "t2_r0_c0", "category": "PERSON", "start": 38, "end": 57, "text": "PUSHPA KUSHAL HEGDE"}
+{"unit_id": "t2_r0_c0", "category": "PERSON", "start": 59, "end": 78, "text": "RAJESH KUSHAL HEGDE"}
+{"unit_id": "t2_r0_c0", "category": "PERSON", "start": 100, "end": 119, "text": "RAKHI GIRIJA SHETTY"}
+{"unit_id": "t2_r0_c0", "category": "PERSON", "start": 80, "end": 98, "text": "ROHIT KUSHAL HEGDE"}
+{"unit_id": "t2_r0_c0", "category": "ORGANIZATION", "start": 263, "end": 306, "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"}
+{"unit_id": "t2_r0_c0", "category": "ORGANIZATION", "start": 233, "end": 258, "text": "KANCHENJUNGA FAMILY TRUST"}
+{"unit_id": "t2_r0_c0", "category": "ORGANIZATION", "start": 121, "end": 144, "text": "DHAULAGIRI FAMILY TRUST"}
+{"unit_id": "t2_r0_c0", "category": "ORGANIZATION", "start": 209, "end": 231, "text": "ANNAPURNA FAMILY TRUST"}
+{"unit_id": "t2_r0_c0", "category": "ORGANIZATION", "start": 168, "end": 187, "text": "MAKALU FAMILY TRUST"}
+{"unit_id": "t2_r0_c0", "category": "ORGANIZATION", "start": 189, "end": 207, "text": "BROAD FAMILY TRUST"}
+{"unit_id": "t2_r1_c0", "category": "PERSON", "start": 635, "end": 656, "text": "KUSHAL SUBBAYYA HEGDE"}
+{"unit_id": "t2_r1_c0", "category": "PERSON", "start": 746, "end": 765, "text": "PUSHPA KUSHAL HEGDE"}
+{"unit_id": "t2_r1_c0", "category": "PERSON", "start": 853, "end": 872, "text": "RAJESH KUSHAL HEGDE"}
+{"unit_id": "t2_r1_c0", "category": "PERSON", "start": 963, "end": 981, "text": "ROHIT KUSHAL HEGDE"}
+{"unit_id": "t2_r1_c0", "category": "ORGANIZATION", "start": 97, "end": 122, "text": "KSH INTERNATIONAL LIMITED"}
+{"unit_id": "t2_r14_c0", "category": "PERSON", "start": 315, "end": 329, "text": "Soumavo Sarkar"}
+{"unit_id": "t2_r14_c0", "category": "PERSON", "start": 302, "end": 313, "text": "Lokesh Shah"}
+{"unit_id": "t2_r14_c0", "category": "ORGANIZATION", "start": 0, "end": 32, "text": "Nuvama Wealth Management Limited"}
+{"unit_id": "t2_r14_c0", "category": "EMAIL_ADDRESS", "start": 187, "end": 205, "text": "ksh.ipo@nuvama.com"}
+{"unit_id": "t2_r14_c0", "category": "EMAIL_ADDRESS", "start": 256, "end": 285, "text": "customerservice.mb@nuvama.com"}
+{"unit_id": "t2_r14_c0", "category": "PHONE_NUMBER", "start": 163, "end": 178, "text": "+91 22 40094400"}
+{"unit_id": "t2_r14_c2", "category": "PERSON", "start": 278, "end": 292, "text": "Kishan Rastogi"}
+{"unit_id": "t2_r14_c2", "category": "PERSON", "start": 293, "end": 306, "text": "Abhijit Diwan"}
+{"unit_id": "t2_r14_c2", "category": "ORGANIZATION", "start": 0, "end": 24, "text": "ICICI Securities Limited"}
+{"unit_id": "t2_r14_c2", "category": "EMAIL_ADDRESS", "start": 146, "end": 169, "text": "ksh@icicisecurities.com"}
+{"unit_id": "t2_r14_c2", "category": "EMAIL_ADDRESS", "start": 229, "end": 261, "text": "customercare@icicisecurities.com"}
+{"unit_id": "t2_r14_c2", "category": "PHONE_NUMBER", "start": 121, "end": 137, "text": "+91 22 6807 7100"}
+{"unit_id": "t2_r14_c6", "category": "PERSON", "start": 353, "end": 373, "text": "Shanti Gopalkrishnan"}
+{"unit_id": "t2_r14_c6", "category": "ORGANIZATION", "start": 0, "end": 33, "text": "MUFG Intime India Private Limited"}
+{"unit_id": "t2_r14_c6", "category": "ORGANIZATION", "start": 44, "end": 77, "text": "Link Intime India Private Limited"}
+{"unit_id": "t2_r14_c6", "category": "EMAIL_ADDRESS", "start": 204, "end": 241, "text": "kshinternational.ipo@in.mpms.mufg.com"}
+{"unit_id": "t2_r14_c6", "category": "EMAIL_ADDRESS", "start": 299, "end": 336, "text": "kshinternational.ipo@in.mpms.mufg.com"}
+{"unit_id": "t2_r14_c6", "category": "PHONE_NUMBER", "start": 180, "end": 194, "text": "+91 81081 1494"}
+{"unit_id": "t3_r1_c1", "category": "ORGANIZATION", "start": 0, "end": 25, "text": "KSH International Limited"}
+{"unit_id": "t4_r3_c1", "category": "ORGANIZATION", "start": 53, "end": 73, "text": "Kirtane & Pandit LLP"}
+{"unit_id": "t4_r6_c1", "category": "ORGANIZATION", "start": 129, "end": 172, "text": "CARE Analytics and Advisory Private Limited"}
+{"unit_id": "t4_r6_c1", "category": "ORGANIZATION", "start": 306, "end": 349, "text": "CARE Analytics and Advisory Private Limited"}
+{"unit_id": "t4_r7_c1", "category": "PERSON", "start": 58, "end": 79, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t4_r8_c1", "category": "PERSON", "start": 50, "end": 65, "text": "Sandesh Bhagwat"}
+{"unit_id": "t4_r9_c1", "category": "PERSON", "start": 50, "end": 60, "text": "Amod Joshi"}
+{"unit_id": "t4_r10_c1", "category": "PERSON", "start": 67, "end": 84, "text": "Sarthak Malvadkar"}
+{"unit_id": "t5_r2_c1", "category": "ORGANIZATION", "start": 0, "end": 43, "text": "Waterloo Industrial Park VI Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 51, "end": 98, "text": "KSH Project Management Services Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 244, "end": 289, "text": "Kushal Motors and Electricals Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 652, "end": 697, "text": "Waterloo Industrial Park IX B Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 560, "end": 605, "text": "Waterloo Industrial Park VIII Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 380, "end": 424, "text": "Waterloo Industrial Park III Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 607, "end": 650, "text": "Waterloo Industrial Park IX Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 515, "end": 558, "text": "Waterloo Industrial Park VI Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 426, "end": 469, "text": "Waterloo Industrial Park IV Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 335, "end": 378, "text": "Waterloo Industrial Park II Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 471, "end": 513, "text": "Waterloo Industrial Park V Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 291, "end": 333, "text": "Waterloo Industrial Park I Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 202, "end": 242, "text": "KSH Integrated Logistics Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 134, "end": 167, "text": "KSH Infra Park VI Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 750, "end": 783, "text": "KSH Infra Park IV Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 18, "end": 49, "text": "Waterloo Motors Private Limited"}
+{"unit_id": "t5_r10_c1", "category": "ORGANIZATION", "start": 169, "end": 200, "text": "KSH Distriparks Private Limited"}
+{"unit_id": "t5_r13_c1", "category": "ORGANIZATION", "start": 34, "end": 77, "text": "CARE Analytics and Advisory Private Limited"}
+{"unit_id": "t5_r15_c1", "category": "PERSON", "start": 50, "end": 68, "text": "Rohit Kushal Hegde"}
+{"unit_id": "t5_r17_c1", "category": "PERSON", "start": 45, "end": 64, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t5_r22_c1", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t5_r22_c1", "category": "PERSON", "start": 23, "end": 42, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t5_r22_c1", "category": "ORGANIZATION", "start": 67, "end": 90, "text": "Dhaulagiri Family Trust"}
+{"unit_id": "t5_r22_c1", "category": "ORGANIZATION", "start": 44, "end": 62, "text": "Broad Family Trust"}
+{"unit_id": "t5_r24_c1", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t5_r24_c1", "category": "PERSON", "start": 44, "end": 63, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t5_r24_c1", "category": "PERSON", "start": 88, "end": 107, "text": "Rakhi Girija Shetty"}
+{"unit_id": "t5_r24_c1", "category": "PERSON", "start": 23, "end": 42, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t5_r24_c1", "category": "PERSON", "start": 65, "end": 83, "text": "Rohit Kushal Hegde"}
+{"unit_id": "t5_r24_c1", "category": "ORGANIZATION", "start": 251, "end": 294, "text": "Waterloo Industrial Park VI Private Limited"}
+{"unit_id": "t5_r24_c1", "category": "ORGANIZATION", "start": 221, "end": 246, "text": "Kanchenjunga Family Trust"}
+{"unit_id": "t5_r24_c1", "category": "ORGANIZATION", "start": 109, "end": 132, "text": "Dhaulagiri Family Trust"}
+{"unit_id": "t5_r24_c1", "category": "ORGANIZATION", "start": 197, "end": 219, "text": "Annapurna Family Trust"}
+{"unit_id": "t5_r24_c1", "category": "ORGANIZATION", "start": 134, "end": 154, "text": "Everest Family Trust"}
+{"unit_id": "t5_r24_c1", "category": "ORGANIZATION", "start": 156, "end": 175, "text": "Makalu Family Trust"}
+{"unit_id": "t5_r25_c1", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t5_r25_c1", "category": "PERSON", "start": 44, "end": 63, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t5_r25_c1", "category": "PERSON", "start": 23, "end": 42, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t5_r25_c1", "category": "PERSON", "start": 68, "end": 86, "text": "Rohit Kushal Hegde"}
+{"unit_id": "t5_r26_c1", "category": "ORGANIZATION", "start": 116, "end": 141, "text": "Kanchenjunga Family Trust"}
+{"unit_id": "t5_r26_c1", "category": "ORGANIZATION", "start": 0, "end": 23, "text": "Dhaulagiri Family Trust"}
+{"unit_id": "t5_r26_c1", "category": "ORGANIZATION", "start": 88, "end": 110, "text": "Annapurna Family Trust"}
+{"unit_id": "t5_r26_c1", "category": "ORGANIZATION", "start": 25, "end": 45, "text": "Everest Family Trust"}
+{"unit_id": "t5_r26_c1", "category": "ORGANIZATION", "start": 47, "end": 66, "text": "Makalu Family Trust"}
+{"unit_id": "t5_r26_c1", "category": "ORGANIZATION", "start": 68, "end": 86, "text": "Broad Family Trust"}
+{"unit_id": "t5_r27_c1", "category": "PERSON", "start": 0, "end": 19, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t5_r27_c1", "category": "ORGANIZATION", "start": 70, "end": 90, "text": "Everest Family Trust"}
+{"unit_id": "t5_r28_c1", "category": "PERSON", "start": 0, "end": 19, "text": "Rakhi Girija Shetty"}
+{"unit_id": "t5_r28_c1", "category": "ORGANIZATION", "start": 79, "end": 101, "text": "Annapurna Family Trust"}
+{"unit_id": "t6_r4_c1", "category": "PERSON", "start": 0, "end": 18, "text": "Rohit Kushal Hegde"}
+{"unit_id": "t6_r4_c1", "category": "ORGANIZATION", "start": 69, "end": 88, "text": "Makalu Family Trust"}
+{"unit_id": "t6_r5_c1", "category": "ORGANIZATION", "start": 73, "end": 98, "text": "Kanchenjunga Family Trust"}
+{"unit_id": "t6_r14_c1", "category": "PERSON", "start": 46, "end": 65, "text": "Rakhi Girija Shetty"}
+{"unit_id": "t8_r15_c1", "category": "ORGANIZATION", "start": 213, "end": 230, "text": "Financial Express"}
+{"unit_id": "t8_r15_c1", "category": "ORGANIZATION", "start": 386, "end": 394, "text": "Loksatta"}
+{"unit_id": "t8_r16_c1", "category": "ORGANIZATION", "start": 212, "end": 229, "text": "Financial Express"}
+{"unit_id": "t9_r1_c1", "category": "ORGANIZATION", "start": 111, "end": 119, "text": "Loksatta"}
+{"unit_id": "t9_r6_c1", "category": "ORGANIZATION", "start": 52, "end": 84, "text": "Nuvama Wealth Management Limited"}
+{"unit_id": "t9_r6_c1", "category": "ORGANIZATION", "start": 89, "end": 113, "text": "ICICI Securities Limited"}
+{"unit_id": "t10_r9_c1", "category": "ORGANIZATION", "start": 182, "end": 199, "text": "HDFC Bank Limited"}
+{"unit_id": "t10_r18_c1", "category": "ORGANIZATION", "start": 0, "end": 24, "text": "ICICI Securities Limited"}
+{"unit_id": "t10_r20_c1", "category": "ORGANIZATION", "start": 84, "end": 104, "text": "CARE Ratings Limited"}
+{"unit_id": "t11_r3_c1", "category": "ORGANIZATION", "start": 0, "end": 32, "text": "Nuvama Wealth Management Limited"}
+{"unit_id": "t11_r6_c1", "category": "PERSON", "start": 218, "end": 239, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t11_r6_c1", "category": "PERSON", "start": 436, "end": 455, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t11_r6_c1", "category": "PERSON", "start": 329, "end": 348, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t11_r6_c1", "category": "PERSON", "start": 546, "end": 564, "text": "Rohit Kushal Hegde"}
+{"unit_id": "t11_r11_c1", "category": "ORGANIZATION", "start": 608, "end": 616, "text": "Loksatta"}
+{"unit_id": "t11_r14_c1", "category": "ORGANIZATION", "start": 173, "end": 191, "text": "ICICI Bank Limited"}
+{"unit_id": "t12_r3_c1", "category": "ORGANIZATION", "start": 153, "end": 170, "text": "HDFC Bank Limited"}
+{"unit_id": "t12_r7_c1", "category": "ORGANIZATION", "start": 0, "end": 33, "text": "MUFG Intime India Private Limited"}
+{"unit_id": "t12_r7_c1", "category": "ORGANIZATION", "start": 44, "end": 77, "text": "Link Intime India Private Limited"}
+{"unit_id": "t12_r13_c1", "category": "ORGANIZATION", "start": 81, "end": 114, "text": "MUFG Intime India Private Limited"}
+{"unit_id": "t12_r13_c1", "category": "ORGANIZATION", "start": 125, "end": 158, "text": "Link Intime India Private Limited"}
+{"unit_id": "t12_r16_c1", "category": "ORGANIZATION", "start": 357, "end": 375, "text": "ICICI Bank Limited"}
+{"unit_id": "t12_r16_c1", "category": "ORGANIZATION", "start": 335, "end": 352, "text": "HDFC Bank Limited"}
+{"unit_id": "t12_r20_c1", "category": "ORGANIZATION", "start": 200, "end": 232, "text": "Nuvama Wealth Management Limited"}
+{"unit_id": "t12_r20_c1", "category": "ORGANIZATION", "start": 237, "end": 261, "text": "ICICI Securities Limited"}
+{"unit_id": "t18_r46_c1", "category": "ORGANIZATION", "start": 0, "end": 29, "text": "Precision Wires India Limited"}
+{"unit_id": "t18_r57_c1", "category": "ORGANIZATION", "start": 0, "end": 41, "text": "Solar Energy Corporation of India Limited"}
+{"unit_id": "t23_r3_c1", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t23_r4_c1", "category": "PERSON", "start": 0, "end": 19, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t23_r5_c1", "category": "PERSON", "start": 0, "end": 19, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t23_r6_c1", "category": "PERSON", "start": 0, "end": 18, "text": "Rohit Kushal Hegde"}
+{"unit_id": "t23_r7_c1", "category": "PERSON", "start": 0, "end": 19, "text": "Rakhi Girija Shetty"}
+{"unit_id": "t23_r8_c1", "category": "ORGANIZATION", "start": 0, "end": 23, "text": "Dhaulagiri Family Trust"}
+{"unit_id": "t23_r9_c1", "category": "ORGANIZATION", "start": 0, "end": 20, "text": "Everest Family Trust"}
+{"unit_id": "t23_r10_c1", "category": "ORGANIZATION", "start": 0, "end": 19, "text": "Makalu Family Trust"}
+{"unit_id": "t23_r11_c1", "category": "ORGANIZATION", "start": 0, "end": 18, "text": "Broad Family Trust"}
+{"unit_id": "t23_r12_c1", "category": "ORGANIZATION", "start": 0, "end": 22, "text": "Annapurna Family Trust"}
+{"unit_id": "t23_r13_c1", "category": "ORGANIZATION", "start": 0, "end": 25, "text": "Kanchenjunga Family Trust"}
+{"unit_id": "t23_r16_c1", "category": "PERSON", "start": 0, "end": 21, "text": "Maithili Rajesh Hegde"}
+{"unit_id": "t23_r17_c1", "category": "PERSON", "start": 0, "end": 25, "text": "Katyayani Balasubramanian"}
+{"unit_id": "t25_r3_c0", "category": "PERSON", "start": 7, "end": 19, "text": "Kushal Hegde"}
+{"unit_id": "t25_r4_c0", "category": "PERSON", "start": 7, "end": 19, "text": "Kushal Hegde"}
+{"unit_id": "t25_r5_c0", "category": "PERSON", "start": 6, "end": 18, "text": "Kushal Hegde"}
+{"unit_id": "t25_r6_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Rakhi Girija Shetty"}
+{"unit_id": "t25_r7_c0", "category": "ORGANIZATION", "start": 0, "end": 23, "text": "Dhaulagiri Family Trust"}
+{"unit_id": "t25_r10_c0", "category": "ORGANIZATION", "start": 0, "end": 18, "text": "Broad Family Trust"}
+{"unit_id": "t25_r11_c0", "category": "ORGANIZATION", "start": 0, "end": 22, "text": "Annapurna Family Trust"}
+{"unit_id": "t25_r12_c0", "category": "ORGANIZATION", "start": 0, "end": 25, "text": "Kanchenjunga Family Trust"}
+{"unit_id": "t25_r15_c0", "category": "PERSON", "start": 9, "end": 21, "text": "Rajesh Hegde"}
+{"unit_id": "t25_r16_c0", "category": "PERSON", "start": 0, "end": 25, "text": "Katyayani Balasubramanian"}
+{"unit_id": "t25_r19_c0", "category": "ORGANIZATION", "start": 0, "end": 26, "text": "Malabar India Fund Limited"}
+{"unit_id": "t32_r1_c0", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t33_r1_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t33_r2_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t33_r3_c0", "category": "PERSON", "start": 0, "end": 18, "text": "Rohit Kushal Hegde"}
+{"unit_id": "t33_r4_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Rakhi Girija Shetty"}
+{"unit_id": "t33_r5_c0", "category": "ORGANIZATION", "start": 0, "end": 23, "text": "Dhaulagiri Family Trust"}
+{"unit_id": "t33_r6_c0", "category": "ORGANIZATION", "start": 0, "end": 20, "text": "Everest Family Trust"}
+{"unit_id": "t33_r7_c0", "category": "ORGANIZATION", "start": 0, "end": 19, "text": "Makalu Family Trust"}
+{"unit_id": "t33_r8_c0", "category": "ORGANIZATION", "start": 0, "end": 18, "text": "Broad Family Trust"}
+{"unit_id": "t33_r9_c0", "category": "ORGANIZATION", "start": 0, "end": 22, "text": "Annapurna Family Trust"}
+{"unit_id": "t33_r10_c0", "category": "ORGANIZATION", "start": 0, "end": 25, "text": "Kanchenjunga Family Trust"}
+{"unit_id": "t35_r1_c0", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t35_r2_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t35_r3_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t35_r4_c0", "category": "PERSON", "start": 0, "end": 18, "text": "Rohit Kushal Hegde"}
+{"unit_id": "t35_r5_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Rakhi Girija Shetty"}
+{"unit_id": "t35_r6_c0", "category": "ORGANIZATION", "start": 0, "end": 23, "text": "Dhaulagiri Family Trust"}
+{"unit_id": "t35_r7_c0", "category": "ORGANIZATION", "start": 0, "end": 20, "text": "Everest Family Trust"}
+{"unit_id": "t35_r8_c0", "category": "ORGANIZATION", "start": 0, "end": 19, "text": "Makalu Family Trust"}
+{"unit_id": "t35_r9_c0", "category": "ORGANIZATION", "start": 0, "end": 18, "text": "Broad Family Trust"}
+{"unit_id": "t35_r10_c0", "category": "ORGANIZATION", "start": 0, "end": 22, "text": "Annapurna Family Trust"}
+{"unit_id": "t35_r11_c0", "category": "ORGANIZATION", "start": 0, "end": 25, "text": "Kanchenjunga Family Trust"}
+{"unit_id": "t36_r2_c0", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t36_r3_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t36_r4_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t36_r5_c0", "category": "PERSON", "start": 0, "end": 18, "text": "Rohit Kushal Hegde"}
+{"unit_id": "t36_r6_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Rakhi Girija Shetty"}
+{"unit_id": "t36_r7_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Rakhi Girija Shetty"}
+{"unit_id": "t36_r8_c0", "category": "ORGANIZATION", "start": 0, "end": 23, "text": "Dhaulagiri Family Trust"}
+{"unit_id": "t36_r9_c0", "category": "ORGANIZATION", "start": 0, "end": 20, "text": "Everest Family Trust"}
+{"unit_id": "t36_r10_c0", "category": "ORGANIZATION", "start": 0, "end": 19, "text": "Makalu Family Trust"}
+{"unit_id": "t36_r11_c0", "category": "ORGANIZATION", "start": 0, "end": 18, "text": "Broad Family Trust"}
+{"unit_id": "t36_r12_c0", "category": "ORGANIZATION", "start": 0, "end": 22, "text": "Annapurna Family Trust"}
+{"unit_id": "t36_r13_c0", "category": "ORGANIZATION", "start": 0, "end": 25, "text": "Kanchenjunga Family Trust"}
+{"unit_id": "t36_r15_c0", "category": "PERSON", "start": 0, "end": 21, "text": "Maithili Rajesh Hegde"}
+{"unit_id": "t36_r16_c0", "category": "PERSON", "start": 0, "end": 21, "text": "Maithili Rajesh Hegde"}
+{"unit_id": "t36_r17_c0", "category": "PERSON", "start": 0, "end": 25, "text": "Katyayani Balasubramanian"}
+{"unit_id": "t36_r18_c0", "category": "PERSON", "start": 0, "end": 25, "text": "Katyayani Balasubramanian"}
+{"unit_id": "t37_r1_c0", "category": "ORGANIZATION", "start": 0, "end": 23, "text": "Dhaulagiri Family Trust"}
+{"unit_id": "t37_r1_c1", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t37_r2_c0", "category": "ORGANIZATION", "start": 0, "end": 19, "text": "Makalu Family Trust"}
+{"unit_id": "t37_r2_c1", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t37_r3_c0", "category": "ORGANIZATION", "start": 0, "end": 20, "text": "Everest Family Trust"}
+{"unit_id": "t37_r3_c1", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t37_r4_c0", "category": "ORGANIZATION", "start": 0, "end": 25, "text": "Kanchenjunga Family Trust"}
+{"unit_id": "t37_r4_c1", "category": "PERSON", "start": 0, "end": 19, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t37_r5_c0", "category": "ORGANIZATION", "start": 0, "end": 22, "text": "Annapurna Family Trust"}
+{"unit_id": "t37_r5_c1", "category": "PERSON", "start": 0, "end": 19, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t37_r6_c0", "category": "ORGANIZATION", "start": 0, "end": 18, "text": "Broad Family Trust"}
+{"unit_id": "t37_r6_c1", "category": "PERSON", "start": 0, "end": 19, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t53_r1_c3", "category": "PERSON", "start": 34, "end": 46, "text": "Kushal Hegde"}
+{"unit_id": "t53_r2_c3", "category": "PERSON", "start": 34, "end": 46, "text": "Kushal Hegde"}
+{"unit_id": "t53_r3_c3", "category": "PERSON", "start": 34, "end": 46, "text": "Kushal Hegde"}
+{"unit_id": "t53_r4_c3", "category": "PERSON", "start": 50, "end": 65, "text": "Karunakar Hegde"}
+{"unit_id": "t53_r4_c3", "category": "PERSON", "start": 34, "end": 46, "text": "Kushal Hegde"}
+{"unit_id": "t53_r6_c3", "category": "PERSON", "start": 34, "end": 49, "text": "Karunakar Hegde"}
+{"unit_id": "t53_r6_c3", "category": "PERSON", "start": 59, "end": 74, "text": "Karunakar Hegde"}
+{"unit_id": "t53_r7_c3", "category": "PERSON", "start": 34, "end": 53, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t53_r8_c3", "category": "PERSON", "start": 34, "end": 46, "text": "Kushal Hegde"}
+{"unit_id": "t53_r8_c3", "category": "ORGANIZATION", "start": 52, "end": 101, "text": "Shubhkamal Leasing and Investment Private Limited"}
+{"unit_id": "t53_r9_c3", "category": "PERSON", "start": 51, "end": 66, "text": "Karunakar Hegde"}
+{"unit_id": "t53_r9_c3", "category": "PERSON", "start": 34, "end": 45, "text": "Rohit Hegde"}
+{"unit_id": "t53_r10_c3", "category": "PERSON", "start": 34, "end": 53, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t53_r10_c3", "category": "ORGANIZATION", "start": 59, "end": 108, "text": "Shubhkamal Leasing and Investment Private Limited"}
+{"unit_id": "t53_r11_c3", "category": "PERSON", "start": 34, "end": 46, "text": "Rajesh Hegde"}
+{"unit_id": "t53_r11_c3", "category": "PERSON", "start": 50, "end": 61, "text": "Vijay Hegde"}
+{"unit_id": "t53_r12_c3", "category": "PERSON", "start": 49, "end": 60, "text": "Vijay Hegde"}
+{"unit_id": "t53_r12_c3", "category": "PERSON", "start": 34, "end": 45, "text": "Rohit Hegde"}
+{"unit_id": "t53_r13_c3", "category": "PERSON", "start": 34, "end": 46, "text": "Kushal Hegde"}
+{"unit_id": "t53_r13_c3", "category": "PERSON", "start": 50, "end": 62, "text": "Rajesh Hegde"}
+{"unit_id": "t53_r13_c3", "category": "PERSON", "start": 67, "end": 78, "text": "Rohit Hegde"}
+{"unit_id": "t53_r16_c3", "category": "PERSON", "start": 37, "end": 49, "text": "Kushal Hegde"}
+{"unit_id": "t53_r16_c3", "category": "PERSON", "start": 51, "end": 63, "text": "Rajesh Hegde"}
+{"unit_id": "t53_r16_c3", "category": "PERSON", "start": 83, "end": 95, "text": "Pushpa Hegde"}
+{"unit_id": "t53_r16_c3", "category": "PERSON", "start": 68, "end": 79, "text": "Rohit Hegde"}
+{"unit_id": "t69_r1_c1", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t69_r2_c1", "category": "PERSON", "start": 0, "end": 19, "text": "Pushpa Kushal Hegde"}
+{"unit_id": "t69_r3_c1", "category": "PERSON", "start": 0, "end": 19, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t69_r4_c1", "category": "PERSON", "start": 0, "end": 18, "text": "Rohit Kushal Hegde"}
+{"unit_id": "t70_r1_c0", "category": "PERSON", "start": 0, "end": 21, "text": "Kushal Subbayya Hegde"}
+{"unit_id": "t70_r2_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Rajesh Kushal Hegde"}
+{"unit_id": "t70_r3_c0", "category": "PERSON", "start": 0, "end": 18, "text": "Rohit Kushal Hegde"}
+{"unit_id": "t70_r4_c0", "category": "PERSON", "start": 0, "end": 19, "text": "Rakhi Girija Shetty"}
+{"unit_id": "t70_r5_c0", "category": "PERSON", "start": 0, "end": 22, "text": "Dinesh Hirachand Munot"}
+{"unit_id": "t70_r6_c0", "category": "PERSON", "start": 0, "end": 18, "text": "Ajay Shriram Patil"}
+{"unit_id": "t70_r7_c0", "category": "PERSON", "start": 0, "end": 16, "text": "Ram Kumar Tiwari"}
+{"unit_id": "t70_r8_c0", "category": "PERSON", "start": 0, "end": 10, "text": "Indu Jacob"}
+{"unit_id": "t72_r1_c3", "category": "ORGANIZATION", "start": 0, "end": 5, "text": "I-Sec"}
+{"unit_id": "t72_r3_c3", "category": "ORGANIZATION", "start": 0, "end": 5, "text": "I-Sec"}
+{"unit_id": "t72_r4_c3", "category": "ORGANIZATION", "start": 0, "end": 5, "text": "I-Sec"}
+{"unit_id": "t72_r7_c3", "category": "ORGANIZATION", "start": 0, "end": 5, "text": "I-Sec"}
+{"unit_id": "t72_r8_c3", "category": "ORGANIZATION", "start": 0, "end": 5, "text": "I-Sec"}
+{"unit_id": "t72_r9_c3", "category": "ORGANIZATION", "start": 0, "end": 5, "text": "I-Sec"}
+{"unit_id": "t72_r10_c3", "category": "ORGANIZATION", "start": 0, "end": 5, "text": "I-Sec"}
+{"unit_id": "t73_r1_c0", "category": "ORGANIZATION", "start": 0, "end": 21, "text": "Kirtane & Pandit, LLP"}
+{"unit_id": "t73_r1_c0", "category": "EMAIL_ADDRESS", "start": 164, "end": 195, "text": "parag.pansare@kirtanepandit.com"}
+{"unit_id": "t73_r1_c0", "category": "PHONE_NUMBER", "start": 207, "end": 224, "text": "+ 91 20 6729 5100"}
+{"unit_id": "t73_r2_c0", "category": "ORGANIZATION", "start": 0, "end": 24, "text": "Hingne Tare & Associates"}
+{"unit_id": "t73_r2_c0", "category": "EMAIL_ADDRESS", "start": 108, "end": 128, "text": "hingnetare@gmail.com"}
+{"unit_id": "t70_r1_c3", "category": "PHYSICAL_ADDRESS", "start": 0, "end": 161, "text": "S. no. 245/ 104, Pushpakamal, Deccan Gymkhana Society, lane no. 3 Prabhat Road, opposite PYC basketball court, Deccan Gymkhana, Pune – 411 004 Maharashtra, India"}
+{"unit_id": "t70_r1_c2", "category": "DIRECTOR_ID_NUMBER", "start": 0, "end": 8, "text": "00135070"}
+{"unit_id": "t70_r2_c3", "category": "PHYSICAL_ADDRESS", "start": 0, "end": 103, "text": "12 Buena Monte, NCL co-operative housing society, Panchvati, Pashan, Pune – 411 008, Maharashtra, India"}
+{"unit_id": "t70_r2_c2", "category": "DIRECTOR_ID_NUMBER", "start": 0, "end": 8, "text": "00114193"}
+{"unit_id": "t70_r3_c3", "category": "PHYSICAL_ADDRESS", "start": 0, "end": 141, "text": "Pushpakamal Apartment, Flat – 1, S. no. 245/ 104, Prabhat Road Lane no. 3, Shivaji Nagar, Deccan Gymkhana, Pune – 411 004, Maharashtra, India"}
+{"unit_id": "t70_r3_c2", "category": "DIRECTOR_ID_NUMBER", "start": 0, "end": 8, "text": "00134926"}
+{"unit_id": "t70_r4_c3", "category": "PHYSICAL_ADDRESS", "start": 0, "end": 173, "text": "S. no. 245/ 104, Pushpakamal, Deccan Gymkhana Society, lane no.\n3 Prabhat Road, opposite PYC basketball court, Erandawane, Deccan Gymkhana, Pune – 411 004 Maharashtra, India"}
+{"unit_id": "t70_r4_c2", "category": "DIRECTOR_ID_NUMBER", "start": 0, "end": 8, "text": "03124510"}
+{"unit_id": "t70_r5_c3", "category": "PHYSICAL_ADDRESS", "start": 0, "end": 120, "text": "Pratik Bunglow, Senapati Bapat Road, behind Sahara Hotel, Shivajinagar, Model Colony, Pune – 411 016, Maharashtra, India"}
+{"unit_id": "t70_r5_c2", "category": "DIRECTOR_ID_NUMBER", "start": 0, "end": 8, "text": "00049801"}
+{"unit_id": "t70_r6_c3", "category": "PHYSICAL_ADDRESS", "start": 0, "end": 102, "text": "602, Gopalkrupa Apartment, Bhonde colony, Prabhat Road, Erandawane, Pune – 411 004, Maharashtra, India"}
+{"unit_id": "t70_r6_c2", "category": "DIRECTOR_ID_NUMBER", "start": 0, "end": 8, "text": "01217000"}
+{"unit_id": "t70_r7_c3", "category": "PHYSICAL_ADDRESS", "start": 0, "end": 91, "text": "A-259, JK Road, Minal Residency, Huzur, Govindpura, Bhopal – 462 023, Madhya Pradesh, India"}
+{"unit_id": "t70_r7_c2", "category": "DIRECTOR_ID_NUMBER", "start": 0, "end": 8, "text": "10938958"}
+{"unit_id": "t70_r8_c3", "category": "PHYSICAL_ADDRESS", "start": 0, "end": 74, "text": "A29, Abhimanshree Society, Pashan Road, Pune – 411 008, Maharashtra, India"}
+{"unit_id": "t70_r8_c2", "category": "DIRECTOR_ID_NUMBER", "start": 0, "end": 8, "text": "05293084"}

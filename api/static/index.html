@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BetterRedactionTool</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <a class="settings-link" href="settings.html" title="Settings">&#9881;</a>
+    <header>
+      <div class="logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4Z"/>
+          <path d="M9 12.5 11.2 14.5 15.5 9.5"/>
+        </svg>
+      </div>
+      <div>
+        <h1>BetterRedactionTool</h1>
+        <p class="subtitle">Redact PII from a .docx and get consistent, realistic fake values back.</p>
+      </div>
+    </header>
+
+    <section id="upload-view">
+      <label id="dropzone" for="file-input">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 16V4"/>
+          <path d="m7 9 5-5 5 5"/>
+          <path d="M20 16.5V19a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5"/>
+        </svg>
+        <p><strong>Click to choose</strong> a .docx file, or drag one here.</p>
+        <p class="hint">Processed locally on this server &mdash; nothing leaves the machine it runs on.</p>
+      </label>
+      <input type="file" id="file-input" accept=".docx" hidden>
+    </section>
+
+    <section id="progress-view" hidden>
+      <div class="file-row">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+          <path d="M14 2v6h6"/>
+        </svg>
+        <span id="file-name"></span>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
+      <div class="progress-meta">
+        <span id="status-label">Uploading&hellip;</span>
+        <span id="eta-label"></span>
+      </div>
+    </section>
+
+    <section id="done-view" hidden>
+      <div class="result-icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="m8 12 3 3 5-6"/>
+        </svg>
+      </div>
+      <p id="result-summary"></p>
+      <div class="button-row">
+        <a class="button primary" id="download-docx" href="#" download>Download redacted.docx</a>
+        <a class="button secondary" id="download-log" href="#" download>Download log (CSV)</a>
+      </div>
+      <button class="link-button" id="reset-button" type="button">Redact another file</button>
+    </section>
+
+    <section id="error-view" hidden>
+      <p id="error-message" class="error-text"></p>
+      <button class="link-button" id="error-reset-button" type="button">Try again</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

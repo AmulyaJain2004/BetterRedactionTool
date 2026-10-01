@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Settings &mdash; BetterRedactionTool</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card wide">
+    <header>
+      <a class="back-link" href="index.html">&larr;</a>
+      <div>
+        <h1>Settings</h1>
+        <p class="subtitle">Add or remove what gets redacted &mdash; no YAML, no code. Changes apply to the next job you submit.</p>
+      </div>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active" data-panel="panel-categories">Categories</button>
+      <button class="tab" data-panel="panel-columns">Table layouts</button>
+      <button class="tab" data-panel="panel-exclude">Exclude list</button>
+    </nav>
+
+    <!-- ===================== Categories ===================== -->
+    <section id="panel-categories" class="panel">
+      <p class="panel-hint">
+        Turn a PII type on/off, or add a brand-new one matched by a regular expression
+        (e.g. a passport number, an employee ID, anything with a consistent shape).
+      </p>
+      <table class="data-table" id="categories-table">
+        <thead><tr><th>Name</th><th>Kind</th><th>Threshold</th><th>Fake value as</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+
+      <details class="add-form">
+        <summary>+ Add a new regex-based category</summary>
+        <form id="category-form">
+          <label>Name <input name="name" placeholder="PASSPORT_NUMBER" required pattern="[A-Z0-9_]+" title="UPPER_SNAKE_CASE"></label>
+          <label>Pattern(s), one per line
+            <textarea name="patterns" rows="2" placeholder="\b[A-PR-WYa-pr-wy][0-9]\d\s?\d{4}[0-9]\b" required></textarea>
+          </label>
+          <div class="form-row-pair">
+            <label>Score threshold <input name="score_threshold" type="number" step="0.05" min="0" max="1" value="0.7"></label>
+            <label>Fake value provider <input name="fake_provider" placeholder="passport_number" value="word" required></label>
+          </div>
+          <p class="field-hint">"Fake value provider" is a method name on <a href="https://faker.readthedocs.io/en/master/providers.html" target="_blank" rel="noopener">faker.Faker()</a>, e.g. <code>name</code>, <code>company</code>, <code>ssn</code>.</p>
+          <button type="submit" class="button primary small">Add category</button>
+        </form>
+      </details>
+    </section>
+
+    <!-- ===================== Table layouts ===================== -->
+    <section id="panel-columns" class="panel" hidden>
+      <p class="panel-hint">
+        A personnel/KYC table (e.g. "Name | Designation | DIN | Address") is redacted
+        by column position, not NER &mdash; more reliable for a bare name/ID sitting alone
+        in a cell. If a new document uses different column headers, add a rule for them
+        here instead of editing <code>redactor/docx_io.py</code>.
+      </p>
+      <table class="data-table" id="columns-table">
+        <thead><tr><th>Column header</th><th>Redact as</th><th>Table also needs one of</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+
+      <details class="add-form">
+        <summary>+ Add a table layout rule</summary>
+        <form id="column-form">
+          <label>Column header text (as it appears in the document) <input name="column_header" placeholder="full name" required></label>
+          <label>Redact that column as
+            <select name="category">
+              <option value="PERSON">PERSON</option>
+              <option value="PHYSICAL_ADDRESS">PHYSICAL_ADDRESS</option>
+              <option value="DIRECTOR_ID_NUMBER">DIRECTOR_ID_NUMBER</option>
+            </select>
+          </label>
+          <label>...but only if the table ALSO has one of these other column(s) (comma-separated)
+            <input name="requires_any_of" placeholder="ssn, title" required>
+          </label>
+          <p class="field-hint">The "also needs" column is what tells us this is really a personnel table and not some unrelated table that happens to have a "name" column.</p>
+          <button type="submit" class="button primary small">Add rule</button>
+        </form>
+      </details>
+    </section>
+
+    <!-- ===================== Exclude list ===================== -->
+    <section id="panel-exclude" class="panel" hidden>
+      <p class="panel-hint">
+        Names that should <strong>never</strong> be redacted as a company, even if the
+        model flags them &mdash; regulators, statutes, your own company's name, a vendor
+        you want left visible. Matching is case-insensitive; multi-word entries also
+        match as a substring.
+      </p>
+      <ul class="tag-list" id="exclude-list"></ul>
+
+      <form id="exclude-form" class="add-form inline-form">
+        <input name="term" placeholder="Add a name or phrase to never redact&hellip;" required>
+        <button type="submit" class="button primary small">Add</button>
+      </form>
+    </section>
+
+    <p id="settings-error" class="error-text" hidden></p>
+  </main>
+
+  <script src="settings.js"></script>
+</body>
+</html>

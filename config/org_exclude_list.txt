@@ -1,0 +1,154 @@
+# Organization / company names that are NEVER redacted even though spaCy's
+# NER tags them as ORG. These are statutory, regulatory, or government
+# bodies and legislation, not identifiable private commercial parties, so
+# treating them as "company name" PII would be a false positive (they are
+# cited purely for legal/regulatory compliance, the same way "Order" or
+# "Ticket" numbers are cited in a support log without being PII).
+#
+# Matching is case-insensitive substring/exact match on the detected span.
+# Add one entry per line. Extend this list freely -- no code changes needed.
+
+Securities and Exchange Board of India
+SEBI
+BSE
+BSE Limited
+NSE
+National Stock Exchange of India Limited
+National Stock Exchange
+Stock Exchanges
+Stock Exchange
+RBI
+Reserve Bank of India
+RoC
+ROC
+Registrar of Companies
+Ministry of Corporate Affairs
+MCA
+Ministry of Commerce and Industry
+Government of India
+GoI
+Central Government
+Companies Act
+Companies Act, 1956
+Companies Act, 2013
+SEBI Act
+SEBI ICDR Regulations
+SEBI ICDR Master Circular
+SCRA
+SCRR
+FEMA
+Foreign Exchange Management Act
+Depositories Act
+NSDL
+National Securities Depository Limited
+CDSL
+Central Depository Services (India) Limited
+ICAI
+Institute of Chartered Accountants of India
+Income-tax Act
+Income Tax Act
+Factories Act
+Finance Act
+Finance Bill
+DPIIT
+Department for Promotion of Industry and Internal Trade
+NPCI
+National Payments Corporation of India
+NACH
+NEFT
+Fugitive Economic Offenders Act
+Depository Participant
+NRE Account
+NRO Account
+Book Running Lead Managers
+BRLMs
+SCSBs
+RTA
+RTAs
+CDPs
+Registered Brokers
+Depositories
+Depository
+N.A.
+
+# Indian state/UT names -- spaCy occasionally mistags these as ORG instead
+# of a place, and a state name is never a company.
+Maharashtra
+Uttar Pradesh
+Madhya Pradesh
+Andhra Pradesh
+Arunachal Pradesh
+Himachal Pradesh
+Tamil Nadu
+West Bengal
+Jammu and Kashmir
+Chhattisgarh
+Karnataka
+Kerala
+Gujarat
+Rajasthan
+Punjab
+Haryana
+Bihar
+Odisha
+Assam
+Telangana
+Jharkhand
+Uttarakhand
+Goa
+Tripura
+Meghalaya
+Manipur
+Nagaland
+Mizoram
+Sikkim
+Delhi
+Chandigarh
+Puducherry
+Pune
+Mumbai
+Bombay
+
+# Languages -- spaCy occasionally tags these as ORG; a language is not a company.
+Marathi
+Hindi
+English
+
+# Generic building/address fragments that are not, on their own, a company name.
+# (Bare legal-entity suffixes like "LLP" are deliberately NOT listed here:
+# exclusion matching is substring-based, so "LLP" would also blank out a
+# real firm name like "Kirtane & Pandit, LLP" that legitimately contains it.)
+5th Floor
+1st Floor
+Wing A
+Fiscals
+Fiscal
+our Board of Directors
+Board of Directors
+Independent Directors
+the Power Sector
+CTC
+COGS
+MW
+European Union
+London Metal Exchange
+Red Herring Prospectus
+Draft Red Herring Prospectus
+Prospectus
+Qualified Institutional Buyers
+Foreign Venture Capital Investors
+Individual Promoters
+the Statutory Auditors
+Statutory Auditors
+Offer Documents
+Long Term Bank Facilities
+Capital Market Division
+Adjusted EBITDA
+Specialised Magnet Winding Wire
+Standard Magnet Winding Wire
+Chakan Unit
+Taloja Unit
+Foreign Exchange Management (Deposit) Regulations
+Securities Contracts (Regulation) Rules
+Central Processing Centre
+

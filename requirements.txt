@@ -1,0 +1,22 @@
+curated-transformers==0.1.1
+en_core_web_trf @ https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.8.0/en_core_web_trf-3.8.0-py3-none-any.whl#sha256=272a31e9d8530d1e075351d30a462d7e80e31da23574f1b274e200f3fff35bf5
+Faker==40.40.0
+presidio_analyzer==2.2.364
+presidio_anonymizer==2.2.364
+python-docx==1.2.0
+PyYAML==6.0.3
+spacy==3.8.16
+spacy-alignments==0.9.2
+spacy-curated-transformers==0.3.1
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+spacy-transformers==1.4.0
+thinc==8.3.13
+torch==2.14.0
+transformers==4.53.2
+
+# --- api/ (FastAPI backend) ---
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+python-multipart==0.0.32
+ruamel.yaml==0.19.1
