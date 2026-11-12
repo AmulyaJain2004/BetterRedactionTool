@@ -289,5 +289,8 @@ api/                             # FastAPI backend: upload -> async job -> progr
 api/config_editor.py             # reads/writes the two config files above for the Settings UI
 api/routers/config.py            # /api/config/* -- Settings UI's backend
 api/static/                      # index.html (upload), settings.html (customize), shared style.css/app.js
-Dockerfile                       # containerized api/ for deployment
+app.py                           # Gradio UI over redactor/ -- used by the HF Space and Render
+deploy/hf-space/                 # HF Space (ZeroGPU, en_core_web_trf): README frontmatter + requirements
+Dockerfile, render.yaml          # Render free tier (512 MB): same Gradio UI, en_core_web_sm -- see deploy/render/
+deploy/docker/Dockerfile         # FastAPI app (api/) + transformer model, for any Docker host with a few GB RAM
 ```

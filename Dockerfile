@@ -1,51 +1,39 @@
-# Build/run:
-#   docker build -t redaction-api .
-#   docker run -p 8000:8000 redaction-api
-# Then open http://localhost:8000
+# Render (free tier, 512 MB RAM) image: the same Gradio UI as the Hugging
+# Face Space (app.py), with spaCy's small en_core_web_sm model instead of
+# the transformer -- see deploy/render/README.md for why and the measured
+# memory/accuracy tradeoff. Render builds this file by default.
 #
-# This is sized for "run it somewhere with real memory" (see README's
-# hosting notes) -- the transformer model alone needs headroom well past a
-# typical free-tier 512MB container. The two fixes below (CPU-only torch,
-# $PORT binding) remove unnecessary bloat and a real deploy bug, but don't
-# change that underlying fact -- en_core_web_trf plus its dependencies
-# still won't fit in 512MB. Confirmed by an actual Render free-tier deploy
-# OOM-killing the process ("Out of memory (used over 512Mi)").
+# Local test:
+#   docker build -t redaction-render .
+#   docker run -p 10000:10000 -m 512m redaction-render
+#   open http://localhost:10000
 
 FROM python:3.11-slim
 
+ENV PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+
+RUN useradd -m -u 1000 app
 WORKDIR /app
 
-# System deps for torch/transformers wheels to install cleanly.
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+COPY deploy/render/requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 
-COPY requirements.txt .
-# torch's default PyPI wheel bundles the full NVIDIA CUDA runtime
-# (cublas, cudnn, the whole "cuda-toolkit" stack) even when nothing on
-# the host has a GPU -- confirmed in an actual build log: ~20 nvidia-*
-# packages pulled in for a CPU-only Render box. The CPU-only wheel index
-# skips all of that, which both shrinks the image substantially and
-# removes CUDA libraries that would otherwise sit loaded in memory unused.
-RUN pip install --no-cache-dir torch==2.14.0 --index-url https://download.pytorch.org/whl/cpu
-RUN pip install --no-cache-dir -r requirements.txt
+COPY --chown=app redactor/ redactor/
+COPY --chown=app config/ config/
+COPY --chown=app app.py LICENSE ./
+COPY --chown=app ["Red Herring Prospectus.docx", "samples/"]
 
-COPY redactor/ redactor/
-COPY config/ config/
-COPY api/ api/
+# REDACTOR_SPACY_MODEL: the one model that fits in 512 MB (see engine.py).
+# GRADIO_ANALYTICS_ENABLED: no phone-home from a server deployment.
+# Render injects $PORT (10000 by default); Gradio must bind 0.0.0.0 to it.
+ENV REDACTOR_SPACY_MODEL=en_core_web_sm \
+    REDACTOR_SAMPLE_HINT="A real ~4,000-section IPO prospectus. Takes several minutes on this free server." \
+    GRADIO_ANALYTICS_ENABLED=False \
+    GRADIO_SERVER_NAME=0.0.0.0 \
+    PORT=10000
+USER app
 
-# Baked into the image at build time so the (slow, ~1GB) model download
-# doesn't happen on every container start -- see redactor/engine.py's
-# SPACY_MODEL_NAME.
-RUN python -m spacy download en_core_web_trf
-
-ENV JOBS_DIR=/app/api_jobs
-RUN mkdir -p /app/api_jobs
-
-EXPOSE 8000
-# Shell form, not exec form with a hardcoded port: Render (and most PaaS
-# hosts) assign a port dynamically via $PORT and expect the app to bind
-# to it, not to a fixed 8000 -- the earlier deploy logged "No open ports
-# detected" because of exactly this. Falls back to 8000 for plain
-# `docker run` where $PORT isn't set.
-CMD uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8000}
+EXPOSE 10000
+CMD GRADIO_SERVER_PORT=${PORT} python app.py

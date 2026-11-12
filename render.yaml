@@ -1,0 +1,11 @@
+# Render Blueprint (optional): only used if you create the service via
+# "New > Blueprint". An existing Docker web service connected to this repo
+# already builds ./Dockerfile -- no dashboard change needed.
+services:
+  - type: web
+    name: betterredactiontool
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    autoDeploy: true

@@ -1,0 +1,8 @@
+.venv/
+.git/
+**/__pycache__/
+*.pyc
+api_jobs/
+output/
+ground_truth/
+scripts/
