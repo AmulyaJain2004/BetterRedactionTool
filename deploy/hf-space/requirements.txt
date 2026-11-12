@@ -1,0 +1,19 @@
+# Requirements for the Hugging Face Space (Gradio SDK) -- see README.md here.
+# Differs from the root requirements.txt only by leaving out api/'s FastAPI
+# deps (app.py calls redactor/ directly). gradio + spaces are not listed:
+# HF's Gradio build installs its own pinned versions of both regardless.
+#
+# The full transformer model works here (the old Space had to fall back to
+# en_core_web_lg): en_core_web_trf 3.8 needs only spacy-curated-transformers
+# + torch, not HF `transformers`, so there's no huggingface-hub conflict
+# with Gradio.
+en_core_web_trf @ https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.8.0/en_core_web_trf-3.8.0-py3-none-any.whl#sha256=272a31e9d8530d1e075351d30a462d7e80e31da23574f1b274e200f3fff35bf5
+spacy==3.8.16
+spacy-curated-transformers==0.3.1
+curated-transformers==0.1.1
+torch
+Faker==40.40.0
+presidio_analyzer==2.2.364
+presidio_anonymizer==2.2.364
+python-docx==1.2.0
+PyYAML==6.0.3
