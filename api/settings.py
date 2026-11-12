@@ -21,3 +21,13 @@ MAX_UPLOAD_BYTES = int(os.environ.get("MAX_UPLOAD_BYTES", 25 * 1024 * 1024))  # 
 # How long a finished (or failed) job's files are kept before cleanup()
 # removes them. A demo doesn't need indefinite storage.
 JOB_RETENTION_HOURS = int(os.environ.get("JOB_RETENTION_HOURS", 24))
+
+# When false, every mutating /api/config/* endpoint returns 403 and the
+# settings page renders read-only. Meant for public deployments (e.g. a
+# Hugging Face Space), where config is global: one visitor deleting a
+# category would silently change redaction for every other visitor.
+ALLOW_CONFIG_EDITS = os.environ.get("ALLOW_CONFIG_EDITS", "true").strip().lower() in ("1", "true", "yes")
+
+# Optional banner shown on the upload page (e.g. "Public demo -- don't
+# upload real confidential documents"). Empty = no banner.
+PUBLIC_NOTICE = os.environ.get("PUBLIC_NOTICE", "").strip()

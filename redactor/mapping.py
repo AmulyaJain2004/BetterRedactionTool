@@ -6,6 +6,8 @@ example in spec.md. Faker is seeded so re-running the tool on the same
 input always produces the same redacted output.
 """
 
+import re
+
 from faker import Faker
 
 FAKE_SEED = 1234  # fixed seed -> reproducible redactions across runs
@@ -16,6 +18,10 @@ class PseudonymMapper:
 
     def __init__(self):
         self._faker = Faker()
+        # Indian-locale faker for addresses only: the default (en_US)
+        # produced "..., California, India". Everything else keeps en_US
+        # so existing name/company output is unchanged.
+        self._faker_in = Faker("en_IN")
         Faker.seed(FAKE_SEED)
         self._cache = {}  # (category, original_text) -> fake_text
 
@@ -43,17 +49,29 @@ class PseudonymMapper:
             return self._fake_date_like(original_text)
         if category == "DIRECTOR_ID_NUMBER":
             return self._faker.numerify("#" * len(original_text.strip()))
+        if category == "AADHAAR_NUMBER":
+            # Reuses the phone-number generator on purpose: despite the
+            # name, it's a generic "keep punctuation/spacing, replace only
+            # digit characters" replacer -- exactly what an Aadhaar number
+            # (12 digits, grouped with spaces or dashes) needs too.
+            return self._fake_phone_number(original_text)
 
         # Everything else: call the configured faker.Faker() method directly,
         # e.g. fake_provider="name" -> self._faker.name().
         return str(getattr(self._faker, fake_provider)())
 
     def _fake_phone_number(self, original: str) -> str:
-        """Keeps the original's punctuation/spacing, replaces only digits."""
-        digits = [c for c in original if c.isdigit()]
-        fake_digits = self._faker.numerify("#" * len(digits))
-        fake_digits_iter = iter(fake_digits)
-        return "".join(next(fake_digits_iter) if c.isdigit() else c for c in original)
+        """Keeps the original's punctuation/spacing, replaces only digits.
+
+        A leading "+<country code>" is kept as-is: "+91" alone identifies
+        no one, and randomizing it produces obviously-fake codes like "+05".
+        """
+        country_code = re.match(r"\s*\+\d{1,3}(?=[\s-])", original)
+        prefix = country_code.group() if country_code else ""
+        rest = original[len(prefix):]
+        digits = [c for c in rest if c.isdigit()]
+        fake_digits_iter = iter(self._faker.numerify("#" * len(digits)))
+        return prefix + "".join(next(fake_digits_iter) if c.isdigit() else c for c in rest)
 
     def _fake_email(self, original: str) -> str:
         """Mirrors spec.md's example: real.name@company.com -> fake.name@example.com."""
@@ -61,15 +79,19 @@ class PseudonymMapper:
         return f"{local_part}@example.com"
 
     def _fake_indian_address(self) -> str:
+        f = self._faker_in
         return (
-            f"{self._faker.building_number()} {self._faker.street_name()}, "
-            f"{self._faker.city()} – {self._faker.postcode()}, "
-            f"{self._faker.state()}, India"
+            f"{f.building_number()} {f.street_name()}, "
+            f"{f.city()} – {f.postcode()}, "
+            f"{f.state()}, India"
         )
 
     def _fake_date_like(self, original: str) -> str:
         """Generates a fake date matching the original's format (numeric vs. 'Month D, YYYY')."""
+        # An adult's birth date (18-80 years ago), not Faker's default of
+        # any date since 1970 -- a director "born" in 2022 reads as fake.
+        birth_date = self._faker.date_of_birth(minimum_age=18, maximum_age=80)
         if any(char.isalpha() for char in original):
-            return self._faker.date(pattern="%B %d, %Y")
+            return birth_date.strftime("%B %d, %Y")
         separator = "-" if "-" in original else "/"
-        return self._faker.date(pattern=f"%d{separator}%m{separator}%Y")
+        return birth_date.strftime(f"%d{separator}%m{separator}%Y")

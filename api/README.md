@@ -84,9 +84,6 @@ api/
 
 ## Hosting
 
-This needs real memory -- `en_core_web_trf` is a transformer model, not
-the older `en_core_web_lg`. Don't put this on a 512MB free-tier box (see
-EVALUATION.md and the earlier chat discussion of Render's free tier: 512MB
-RAM / 0.1 CPU doesn't have headroom for a transformer alongside the app
-itself). A `Dockerfile` is included at the repo root, sized for a host
-with a few GB of memory instead.
+This needs real memory to run -- `en_core_web_trf` is a transformer
+model, not the older `en_core_web_lg`. Run it locally (as above) or on a
+host with a few GB of RAM to spare.

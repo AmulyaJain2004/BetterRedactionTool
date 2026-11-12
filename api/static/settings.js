@@ -17,6 +17,12 @@ document.querySelectorAll(".tab").forEach((tab) => {
 init();
 
 async function init() {
+  const status = await getJSON("/api/config/status").catch(() => ({ editable: true }));
+  if (!status.editable) {
+    document.body.classList.add("read-only");
+    document.getElementById("readonly-notice").hidden = false;
+  }
+
   await Promise.all([loadCategories(), loadColumns(), loadExcludeList()]);
 
   document.getElementById("category-form").addEventListener("submit", onAddCategory);

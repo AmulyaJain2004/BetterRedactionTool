@@ -9,6 +9,7 @@ Redis/Postgres if that's ever needed; nothing else in the API should have
 to change, since routers only talk to the JOB_STORE singleton below).
 """
 
+import shutil
 import threading
 import time
 import uuid
@@ -16,7 +17,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from api.schemas import JobState
-from api.settings import JOBS_DIR
+from api.settings import JOB_RETENTION_HOURS, JOBS_DIR
 
 
 @dataclass
@@ -85,6 +86,7 @@ class JobStore:
         self._lock = threading.Lock()
 
     def create(self) -> Job:
+        self.cleanup()
         job = Job(job_id=uuid.uuid4().hex)
         job.dir.mkdir(parents=True, exist_ok=True)
         with self._lock:
@@ -122,6 +124,22 @@ class JobStore:
                 return
             job.status = JobState.failed
             job.error = error
+
+    def cleanup(self):
+        """Deletes finished/failed jobs (record + uploaded/redacted files)
+        older than JOB_RETENTION_HOURS. Called on each new upload -- cheap,
+        and keeps a long-running public deployment from accumulating
+        everyone's documents on disk."""
+        cutoff = time.time() - JOB_RETENTION_HOURS * 3600
+        with self._lock:
+            expired = [
+                job for job in self._jobs.values()
+                if job.created_at < cutoff and job.status in (JobState.done, JobState.failed)
+            ]
+            for job in expired:
+                del self._jobs[job.job_id]
+        for job in expired:
+            shutil.rmtree(job.dir, ignore_errors=True)
 
 
 # One store for the whole process -- imported by routers and the worker.

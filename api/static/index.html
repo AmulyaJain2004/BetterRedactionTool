@@ -22,6 +22,8 @@
       </div>
     </header>
 
+    <p id="public-notice" class="notice" hidden></p>
+
     <section id="upload-view">
       <label id="dropzone" for="file-input">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -30,7 +32,7 @@
           <path d="M20 16.5V19a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5"/>
         </svg>
         <p><strong>Click to choose</strong> a .docx file, or drag one here.</p>
-        <p class="hint">Processed locally on this server &mdash; nothing leaves the machine it runs on.</p>
+        <p class="hint">Processed on the server hosting this page &mdash; no third-party APIs are called.</p>
       </label>
       <input type="file" id="file-input" accept=".docx" hidden>
     </section>

@@ -18,6 +18,18 @@ const statusLabel = document.getElementById("status-label");
 const etaLabel = document.getElementById("eta-label");
 const resultSummary = document.getElementById("result-summary");
 
+// Optional deployment banner (PUBLIC_NOTICE env var, see api/settings.py).
+fetch("/api/config/status")
+  .then((res) => (res.ok ? res.json() : null))
+  .then((status) => {
+    if (status && status.public_notice) {
+      const el = document.getElementById("public-notice");
+      el.textContent = status.public_notice;
+      el.hidden = false;
+    }
+  })
+  .catch(() => {});
+
 function showView(name) {
   for (const [key, el] of Object.entries(views)) {
     el.hidden = key !== name;
@@ -101,7 +113,18 @@ function pollStatus(jobId) {
 function renderProgress(status) {
   const pct = status.progress_percent ?? 0;
   progressFill.style.width = `${pct}%`;
-  statusLabel.textContent = `${status.status} — ${status.units_done}/${status.units_total} sections`;
+  if (status.status === "queued") {
+    // Jobs run one at a time (see api/redaction_worker.py).
+    statusLabel.textContent = "Waiting for another job to finish…";
+    etaLabel.textContent = "";
+    return;
+  }
+  if (status.units_total === 0) {
+    statusLabel.textContent = "Reading document…";
+    etaLabel.textContent = "";
+    return;
+  }
+  statusLabel.textContent = `Redacting — ${status.units_done.toLocaleString()} / ${status.units_total.toLocaleString()} sections`;
   etaLabel.textContent = formatEta(status.estimated_seconds_remaining);
 }
 

@@ -42,6 +42,7 @@ def redact_docx(
     Returns the full replacement log: [(category, original_value, fake_value), ...]
     """
     engine = engine or RedactionEngine()
+    engine.start_document()
     document = Document(input_path)
     replacement_log = []
 
@@ -205,6 +206,20 @@ def _redact_paragraph(paragraph, engine, replacement_log, tick=lambda: None):
 
 
 def _set_paragraph_text(paragraph, new_text: str):
+    # paragraph.text (what was redacted) includes text inside
+    # <w:hyperlink> elements, but paragraph.runs does NOT -- it only
+    # returns top-level runs. Writing to paragraph.runs alone would leave a
+    # hyperlinked email address untouched in the output (a PII leak) and
+    # duplicate it as fake text alongside. Hyperlinks are unwrapped
+    # instead: their runs are moved into the paragraph, and the link
+    # element itself (whose target is often "mailto:<the real address>")
+    # is dropped.
+    p = paragraph._p
+    for hyperlink in p.xpath("./w:hyperlink"):
+        for run_element in hyperlink.xpath("./w:r"):
+            hyperlink.addprevious(run_element)
+        p.remove(hyperlink)
+
     runs = paragraph.runs
     if not runs:
         return

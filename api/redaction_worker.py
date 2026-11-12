@@ -7,6 +7,7 @@ otherwise freeze every other request the server is handling.
 """
 
 import csv
+import threading
 import traceback
 
 from redactor.docx_io import redact_docx
@@ -15,7 +16,22 @@ from redactor.engine import RedactionEngine
 from api.job_store import JOB_STORE, Job
 
 
+# One shared RedactionEngine serves every job, and it is not thread-safe:
+# it holds per-document state (glossary terms, known names, the fake-value
+# cache) and Presidio's recognizer registry. Two uploads at once used to
+# run on two threads against that same object and corrupt each other's
+# output. Jobs now run one at a time; a waiting job simply stays "queued"
+# (the upload page shows that). On CPU-only hosts this costs almost
+# nothing anyway -- two transformer passes in parallel just split the cores.
+_ENGINE_LOCK = threading.Lock()
+
+
 def run_redaction_job(job: Job, engine: RedactionEngine):
+    with _ENGINE_LOCK:
+        _run_locked(job, engine)
+
+
+def _run_locked(job: Job, engine: RedactionEngine):
     try:
         def on_unit_done(units_done: int, units_total: int):
             JOB_STORE.update_progress(job.job_id, units_done, units_total)

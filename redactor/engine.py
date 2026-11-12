@@ -12,6 +12,8 @@ sources of detections, then resolves overlaps and rewrites the text:
      redactor/docx_io.py (see `replace_whole_span` below).
 """
 
+import os
+
 from presidio_analyzer import AnalyzerEngine, Pattern, PatternRecognizer
 from presidio_analyzer.nlp_engine import NlpEngineProvider
 
@@ -30,17 +32,26 @@ from redactor.mapping import PseudonymMapper
 # worth it for redaction quality on a batch job, not for a latency-sensitive
 # path. Requires `pip install spacy-transformers` and
 # `python -m spacy download en_core_web_trf`.
-SPACY_MODEL_NAME = "en_core_web_trf"
+# Overridable via REDACTOR_SPACY_MODEL for memory-constrained hosts: the
+# Render free tier (512 MB RAM) sets en_core_web_md, since the transformer
+# model plus torch needs ~2 GB and was OOM-killed there. Everything else
+# (CLI, HF Space, Docker with real memory) keeps the accurate default.
+SPACY_MODEL_NAME = os.environ.get("REDACTOR_SPACY_MODEL", "en_core_web_trf")
 
 
 class RedactionEngine:
     def __init__(self):
         self.categories = config.load_categories()
-        self.org_exclude_terms = config.load_org_exclude_terms()
+        # The static deny-list from disk. org_exclude_terms (below) is this
+        # plus whatever a given document's own glossary adds, and is reset
+        # back to this baseline at the start of every document.
+        self._base_org_exclude_terms = config.load_org_exclude_terms()
+        self.org_exclude_terms = set(self._base_org_exclude_terms)
         # Filled in by docx_io.py from the document's own personnel table,
         # before redaction starts -- see special_categories.find_organizations.
         self.known_person_names: set[str] = set()
         self.mapper = PseudonymMapper()
+        self._reload_pending = False
 
         nlp_engine = NlpEngineProvider(nlp_configuration={
             "nlp_engine_name": "spacy",
@@ -65,12 +76,35 @@ class RedactionEngine:
         en_core_web_trf (the expensive part -- see SPACY_MODEL_NAME above).
         """
         self.categories = config.load_categories()
-        self.org_exclude_terms = config.load_org_exclude_terms()
+        self._base_org_exclude_terms = config.load_org_exclude_terms()
+        self.org_exclude_terms = set(self._base_org_exclude_terms)
         self._presidio_entity_names = [
             name for name, cfg in self.categories.items()
             if cfg["kind"] in ("presidio_builtin", "regex")
         ]
         self._sync_regex_recognizers()
+
+    def request_reload(self):
+        """Marks the config as changed; the actual reload_categories() call
+        happens in start_document(), i.e. before the *next* document. This
+        keeps a settings edit from swapping categories/recognizers out from
+        under a document that's halfway through being redacted."""
+        self._reload_pending = True
+
+    def start_document(self):
+        """Resets all per-document state. Must be called before redacting
+        each new document when one engine is reused across documents (the
+        web app does exactly that). Without it, one document's glossary
+        terms and personnel names would leak into the next document's
+        detection, and the shared fake-value cache would map the same real
+        name to the same fake name across unrelated uploads -- letting
+        anyone comparing two redacted outputs link them to one person."""
+        if self._reload_pending:
+            self._reload_pending = False
+            self.reload_categories()
+        self.org_exclude_terms = set(self._base_org_exclude_terms)
+        self.known_person_names = set()
+        self.mapper = PseudonymMapper()
 
     def _sync_regex_recognizers(self):
         """Adds recognizers for any `kind: regex` category not yet
@@ -164,6 +198,10 @@ class RedactionEngine:
         if "DATE_OF_BIRTH" in self.categories:
             for start, end, dob_text in special_categories.find_dates_of_birth(text):
                 matches.append((start, end, "DATE_OF_BIRTH", dob_text))
+
+        if "AADHAAR_NUMBER" in self.categories:
+            for start, end, aadhaar_text in special_categories.find_aadhaar_numbers(text):
+                matches.append((start, end, "AADHAAR_NUMBER", aadhaar_text))
 
         if "PHYSICAL_ADDRESS" in self.categories:
             # find_address_after_keyword only returns a match when a

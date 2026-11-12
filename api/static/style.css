@@ -425,3 +425,20 @@ h1 {
   line-height: 1;
 }
 .tag-list button:hover { color: var(--error); background: var(--error-bg); }
+
+/* --- Deployment notices (public demo banner, read-only settings) --- */
+
+.notice {
+  background: var(--accent-light);
+  color: var(--accent);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  margin: 0 0 1.2rem;
+}
+
+/* Read-only settings: hide every way to add/remove, keep the tables. */
+body.read-only .add-form,
+body.read-only .row-delete,
+body.read-only .tag-list button { display: none; }

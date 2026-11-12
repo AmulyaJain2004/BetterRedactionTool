@@ -1,3 +1,7 @@
+# en_core_web_trf 3.8 runs on spacy-curated-transformers (+ torch) -- it
+# does NOT need HF `transformers`/`spacy-transformers`. Those used to be
+# listed here unused, and their huggingface-hub<1.0 cap is what made the
+# transformer model impossible to install next to Gradio on HF Spaces.
 curated-transformers==0.1.1
 en_core_web_trf @ https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.8.0/en_core_web_trf-3.8.0-py3-none-any.whl#sha256=272a31e9d8530d1e075351d30a462d7e80e31da23574f1b274e200f3fff35bf5
 Faker==40.40.0
@@ -10,10 +14,8 @@ spacy-alignments==0.9.2
 spacy-curated-transformers==0.3.1
 spacy-legacy==3.0.12
 spacy-loggers==1.0.5
-spacy-transformers==1.4.0
 thinc==8.3.13
 torch==2.14.0
-transformers==4.53.2
 
 # --- api/ (FastAPI backend) ---
 fastapi==0.142.2

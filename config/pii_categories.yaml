@@ -67,19 +67,28 @@ categories:
     kind: structural       # bonus category: shows how easy it is to extend
     fake_provider: din_number
 
-# ORGANIZATION, PHYSICAL_ADDRESS and DATE_OF_BIRTH are handled by small,
-# purpose-built functions in redactor/special_categories.py instead of a
-# plain presidio_builtin/regex entry, because each needs extra context
-# Presidio's flat span-matching can't express on its own:
+  - name: AADHAAR_NUMBER
+    kind: checksum_regex   # detected via redactor/special_categories.py
+    fake_provider: aadhaar_number
+
+# ORGANIZATION, PHYSICAL_ADDRESS, DATE_OF_BIRTH, and AADHAAR_NUMBER are
+# handled by small, purpose-built functions in
+# redactor/special_categories.py instead of a plain presidio_builtin/regex
+# entry, because each needs extra context Presidio's flat span-matching
+# can't express on its own:
 #   - ORGANIZATION needs a deny-list (regulators/statutes aren't PII).
 #   - PHYSICAL_ADDRESS must only fire for a *named individual's* address,
 #     not the company's public registered/corporate office.
 #   - DATE_OF_BIRTH must only fire near a "date of birth" style keyword,
 #     otherwise every legal date in the document would be flagged.
-# DIRECTOR_ID_NUMBER (India's DIN) is not in spec.md's minimum list; it's
-# included to demonstrate how a new personal-identifier category is added:
-# one config entry (see structural_table_columns below) + one line in
-# redactor/mapping.py's fake-value generator.
+#   - AADHAAR_NUMBER must pass a Verhoeff checksum (the real check-digit
+#     algorithm India's UIDAI uses), otherwise any 12-digit span (a phone
+#     number, a financial figure) would be flagged.
+# DIRECTOR_ID_NUMBER (India's DIN) and AADHAAR_NUMBER are not in
+# spec.md's minimum list; both are included to demonstrate how a new
+# personal-identifier category is added -- one config entry (plus, for
+# DIRECTOR_ID_NUMBER, a structural_table_columns rule below) + one line
+# in redactor/mapping.py's fake-value generator.
 
 # Tables like "Name | Designation | DIN | Address" hold true personal data
 # in plain columns. Reading each cell in isolation with NER is unreliable
